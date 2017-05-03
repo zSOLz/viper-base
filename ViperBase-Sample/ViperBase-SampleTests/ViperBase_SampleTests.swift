@@ -1,15 +1,15 @@
 //
-//  ViperBaseTests.swift
-//  ViperBaseTests
+//  ViperBase_SampleTests.swift
+//  ViperBase-SampleTests
 //
-//  Created by SOL on 28.04.17.
+//  Created by SOL on 03.05.17.
 //  Copyright © 2017 SOL. All rights reserved.
 //
 
 import XCTest
-@testable import ViperBase
+@testable import ViperBase_Sample
 
-class ViperBaseTests: XCTestCase {
+class ViperBase_SampleTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

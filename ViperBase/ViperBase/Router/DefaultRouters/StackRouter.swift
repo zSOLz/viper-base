@@ -9,7 +9,7 @@
 import UIKit
 
 open class StackRouter: Router, StackRouterInterface {
-    open lazy var navigationController = UINavigationController()
+    open lazy var navigationController: PresentableNavigationController = PresentableNavigationController()
 
     override public init() {
         super.init()
@@ -36,4 +36,19 @@ open class StackRouter: Router, StackRouterInterface {
     open func loadNavigationController() {
         // Does nothing
     }
+    
+    open func containsViewController<ControllerType: UIViewController>(withType _: ControllerType) -> Bool {
+        return navigationController.viewControllers.contains { $0 is ControllerType }
+    }
+    
+    open func popToFirstViewController<ControllerType: UIViewController>(withType _: ControllerType, animated: Bool) -> [UIViewController] {
+        for controller in navigationController.viewControllers.reversed() {
+            if controller is ControllerType {
+                return navigationController.popToViewController(controller, animated: animated) ?? []
+            }
+        }
+        return []
+    }
+    
+    // TODO: Implement child navigations automatic removal
 }

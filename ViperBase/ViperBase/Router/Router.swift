@@ -11,6 +11,7 @@ import UIKit
 open class Router: NSObject, RouterInterface {
     open fileprivate(set) lazy var childRouters = [Router]()
     open fileprivate(set) weak var parentRouter: Router?
+    
     open var baseViewController: UIViewController {
         fatalError("ViperBase.Router.baseViewController\n" +
             "Abstract getter. Please override 'baseViewController' getter in child class")

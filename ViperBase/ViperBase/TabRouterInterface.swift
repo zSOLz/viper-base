@@ -1,5 +1,5 @@
 //
-//  StackNavigationController.swift
+//  TabRouterInterface.swift
 //  ViperBase
 //
 //  Created by SOL on 02.05.17.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-open class StackNavigationController: UINavigationController {
-    
+public protocol TabRouterInterface: RouterInterface {
+    // Empty
 }
