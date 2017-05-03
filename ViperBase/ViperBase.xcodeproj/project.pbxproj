@@ -50,7 +50,7 @@
 		FF24530B1EB903590017D32D /* PresentableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableTabBarController.swift; sourceTree = "<group>"; };
 		FF24530D1EB91A080017D32D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		FF643B921EB3AD9800B067D4 /* StackRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackRouterInterface.swift; sourceTree = "<group>"; };
-		FF643B941EB3AF1B00B067D4 /* ContainerRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerRouterInterface.swift; path = Router/DefaultRouters/ContainerRouterInterface.swift; sourceTree = "<group>"; };
+		FF643B941EB3AF1B00B067D4 /* ContainerRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerRouterInterface.swift; path = ContainerRouterInterface.swift; sourceTree = "<group>"; };
 		FF919D5A1EB353EA0003A85C /* ViperBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViperBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF919D5D1EB353EA0003A85C /* ViperBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViperBase.h; sourceTree = "<group>"; };
 		FF919D5E1EB353EA0003A85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,11 +58,11 @@
 		FF919D681EB353EA0003A85C /* ViperBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperBaseTests.swift; sourceTree = "<group>"; };
 		FF919D6A1EB353EA0003A85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF919D7B1EB356E60003A85C /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
-		FF919D7E1EB357E50003A85C /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerViewController.swift; path = View/BaseViewControllers/ContainerViewController.swift; sourceTree = "<group>"; };
+		FF919D7E1EB357E50003A85C /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerViewController.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		FF919D801EB357E50003A85C /* PresentableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableViewController.swift; sourceTree = "<group>"; };
 		FF919D841EB357E50003A85C /* PresentableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableView.swift; sourceTree = "<group>"; };
 		FF919D8F1EB35A930003A85C /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
-		FF919D911EB35D9D0003A85C /* ContentContainerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentContainerInterface.swift; path = BaseViews/ContentContainerInterface.swift; sourceTree = "<group>"; };
+		FF919D911EB35D9D0003A85C /* ContentContainerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentContainerInterface.swift; path = ContentContainerInterface.swift; sourceTree = "<group>"; };
 		FF919D941EB385510003A85C /* PresentableControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableControl.swift; sourceTree = "<group>"; };
 		FF919D971EB385E00003A85C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FF919D9A1EB393040003A85C /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		FF919D9F1EB3995C0003A85C /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		FF919DA11EB39B5F0003A85C /* RouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
 		FF919DA31EB39BB10003A85C /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		FF919DA71EB3AA510003A85C /* ContainerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerRouter.swift; path = Router/DefaultRouters/ContainerRouter.swift; sourceTree = "<group>"; };
+		FF919DA71EB3AA510003A85C /* ContainerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerRouter.swift; path = ContainerRouter.swift; sourceTree = "<group>"; };
 		FF919DAA1EB3AA510003A85C /* StackRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackRouter.swift; sourceTree = "<group>"; };
 		FFA6DD341EB8EB4B003D7784 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		FFA6DD361EB8EC34003D7784 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				FF919D7B1EB356E60003A85C /* ViewInterface.swift */,
 			);
 			name = Views;
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FF919D751EB354870003A85C /* Interactors */ = {
@@ -161,7 +161,7 @@
 				FF919D9D1EB399150003A85C /* InteractorInterface.swift */,
 			);
 			name = Interactors;
-			path = Interactor;
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 		FF919D761EB354900003A85C /* Routers */ = {
@@ -172,7 +172,7 @@
 				FF919DA11EB39B5F0003A85C /* RouterInterface.swift */,
 			);
 			name = Routers;
-			path = Router;
+			path = Routers;
 			sourceTree = "<group>";
 		};
 		FF919D771EB3549A0003A85C /* Presenters */ = {
@@ -182,7 +182,7 @@
 				FF919D8F1EB35A930003A85C /* PresenterInterface.swift */,
 			);
 			name = Presenters;
-			path = Presenter;
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		FF919D961EB385E00003A85C /* Frameworks */ = {
@@ -218,7 +218,7 @@
 				FFA6DD3A1EB8F75A003D7784 /* PresentableNavigationController.swift */,
 			);
 			name = Stack;
-			path = Router/DefaultRouters;
+			path = Stack;
 			sourceTree = "<group>";
 		};
 		FFA6DD301EB8E08D003D7784 /* Services */ = {
@@ -228,6 +228,7 @@
 				FFA6DD361EB8EC34003D7784 /* Service.swift */,
 			);
 			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		FFA6DD381EB8F6BC003D7784 /* Custom */ = {
@@ -238,7 +239,7 @@
 				FF919DA51EB3AA2E0003A85C /* Stack */,
 			);
 			name = Custom;
-			path = ..;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		FFA6DD391EB8F6E7003D7784 /* Container */ = {
@@ -249,6 +250,7 @@
 				FF919D7E1EB357E50003A85C /* ContainerViewController.swift */,
 			);
 			name = Container;
+			path = Container;
 			sourceTree = "<group>";
 		};
 		FFA6DD3C1EB8F7D8003D7784 /* Tab */ = {
@@ -259,6 +261,7 @@
 				FF24530B1EB903590017D32D /* PresentableTabBarController.swift */,
 			);
 			name = Tab;
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

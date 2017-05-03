@@ -12,20 +12,9 @@
 		FF482E531EB9F296004DEE00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF482E511EB9F296004DEE00 /* Main.storyboard */; };
 		FF482E551EB9F296004DEE00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF482E541EB9F296004DEE00 /* Assets.xcassets */; };
 		FF482E581EB9F296004DEE00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF482E561EB9F296004DEE00 /* LaunchScreen.storyboard */; };
-		FF482E631EB9F297004DEE00 /* ViperBase_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF482E621EB9F297004DEE00 /* ViperBase_SampleTests.swift */; };
 		FF482E6E1EB9F2D5004DEE00 /* ViperBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF482E6D1EB9F2D5004DEE00 /* ViperBase.framework */; };
 		FF482E6F1EB9F2D5004DEE00 /* ViperBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF482E6D1EB9F2D5004DEE00 /* ViperBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FF482E5F1EB9F297004DEE00 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF482E421EB9F296004DEE00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FF482E491EB9F296004DEE00;
-			remoteInfo = "ViperBase-Sample";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FF482E701EB9F2D5004DEE00 /* Embed Frameworks */ = {
@@ -44,14 +33,11 @@
 /* Begin PBXFileReference section */
 		FF482E4A1EB9F296004DEE00 /* ViperBase-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViperBase-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF482E4D1EB9F296004DEE00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF482E4F1EB9F296004DEE00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF482E4F1EB9F296004DEE00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF482E521EB9F296004DEE00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF482E541EB9F296004DEE00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF482E571EB9F296004DEE00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF482E591EB9F296004DEE00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF482E5E1EB9F297004DEE00 /* ViperBase-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViperBase-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF482E621EB9F297004DEE00 /* ViperBase_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperBase_SampleTests.swift; sourceTree = "<group>"; };
-		FF482E641EB9F297004DEE00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF482E6D1EB9F2D5004DEE00 /* ViperBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViperBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -64,13 +50,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF482E5B1EB9F297004DEE00 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				FF482E4C1EB9F296004DEE00 /* ViperBase-Sample */,
-				FF482E611EB9F297004DEE00 /* ViperBase-SampleTests */,
 				FF482E711EB9F2DC004DEE00 /* Frameworks */,
 				FF482E4B1EB9F296004DEE00 /* Products */,
 			);
@@ -88,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				FF482E4A1EB9F296004DEE00 /* ViperBase-Sample.app */,
-				FF482E5E1EB9F297004DEE00 /* ViperBase-SampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,22 +74,15 @@
 			isa = PBXGroup;
 			children = (
 				FF482E4D1EB9F296004DEE00 /* AppDelegate.swift */,
-				FF482E4F1EB9F296004DEE00 /* ViewController.swift */,
-				FF482E511EB9F296004DEE00 /* Main.storyboard */,
-				FF482E541EB9F296004DEE00 /* Assets.xcassets */,
-				FF482E561EB9F296004DEE00 /* LaunchScreen.storyboard */,
-				FF482E591EB9F296004DEE00 /* Info.plist */,
+				FF482E741EB9F3A3004DEE00 /* Assembly */,
+				FF482E731EB9F382004DEE00 /* Routers */,
+				FF482E721EB9F37A004DEE00 /* Modules */,
+				FF482E751EB9F3AE004DEE00 /* DataModels */,
+				FF482E771EB9F3D3004DEE00 /* DataManagers */,
+				FF482E761EB9F3C5004DEE00 /* Interactors */,
+				FF482E781EB9F3EC004DEE00 /* SupportingFiles */,
 			);
 			path = "ViperBase-Sample";
-			sourceTree = "<group>";
-		};
-		FF482E611EB9F297004DEE00 /* ViperBase-SampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				FF482E621EB9F297004DEE00 /* ViperBase_SampleTests.swift */,
-				FF482E641EB9F297004DEE00 /* Info.plist */,
-			);
-			path = "ViperBase-SampleTests";
 			sourceTree = "<group>";
 		};
 		FF482E711EB9F2DC004DEE00 /* Frameworks */ = {
@@ -121,6 +91,60 @@
 				FF482E6D1EB9F2D5004DEE00 /* ViperBase.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF482E721EB9F37A004DEE00 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FF482E4F1EB9F296004DEE00 /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FF482E731EB9F382004DEE00 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				FF482E511EB9F296004DEE00 /* Main.storyboard */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		FF482E741EB9F3A3004DEE00 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		FF482E751EB9F3AE004DEE00 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		FF482E761EB9F3C5004DEE00 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		FF482E771EB9F3D3004DEE00 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		FF482E781EB9F3EC004DEE00 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FF482E541EB9F296004DEE00 /* Assets.xcassets */,
+				FF482E561EB9F296004DEE00 /* LaunchScreen.storyboard */,
+				FF482E591EB9F296004DEE00 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,24 +168,6 @@
 			productReference = FF482E4A1EB9F296004DEE00 /* ViperBase-Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF482E5D1EB9F297004DEE00 /* ViperBase-SampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FF482E6A1EB9F297004DEE00 /* Build configuration list for PBXNativeTarget "ViperBase-SampleTests" */;
-			buildPhases = (
-				FF482E5A1EB9F297004DEE00 /* Sources */,
-				FF482E5B1EB9F297004DEE00 /* Frameworks */,
-				FF482E5C1EB9F297004DEE00 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FF482E601EB9F297004DEE00 /* PBXTargetDependency */,
-			);
-			name = "ViperBase-SampleTests";
-			productName = "ViperBase-SampleTests";
-			productReference = FF482E5E1EB9F297004DEE00 /* ViperBase-SampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,12 +182,6 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = VGV466S22A;
 						ProvisioningStyle = Automatic;
-					};
-					FF482E5D1EB9F297004DEE00 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VGV466S22A;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FF482E491EB9F296004DEE00;
 					};
 				};
 			};
@@ -199,7 +199,6 @@
 			projectRoot = "";
 			targets = (
 				FF482E491EB9F296004DEE00 /* ViperBase-Sample */,
-				FF482E5D1EB9F297004DEE00 /* ViperBase-SampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,13 +214,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF482E5C1EB9F297004DEE00 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,23 +226,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF482E5A1EB9F297004DEE00 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF482E631EB9F297004DEE00 /* ViperBase_SampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FF482E601EB9F297004DEE00 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF482E491EB9F296004DEE00 /* ViperBase-Sample */;
-			targetProxy = FF482E5F1EB9F297004DEE00 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FF482E511EB9F296004DEE00 /* Main.storyboard */ = {
@@ -259,6 +235,7 @@
 				FF482E521EB9F296004DEE00 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		FF482E561EB9F296004DEE00 /* LaunchScreen.storyboard */ = {
@@ -267,6 +244,7 @@
 				FF482E571EB9F296004DEE00 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -370,7 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VGV466S22A;
-				INFOPLIST_FILE = "ViperBase-Sample/Info.plist";
+				INFOPLIST_FILE = "ViperBase-Sample/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SOL.ViperBase-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,41 +361,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VGV466S22A;
-				INFOPLIST_FILE = "ViperBase-Sample/Info.plist";
+				INFOPLIST_FILE = "ViperBase-Sample/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SOL.ViperBase-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		FF482E6B1EB9F297004DEE00 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = VGV466S22A;
-				INFOPLIST_FILE = "ViperBase-SampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "SOL.ViperBase-SampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperBase-Sample.app/ViperBase-Sample";
-			};
-			name = Debug;
-		};
-		FF482E6C1EB9F297004DEE00 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = VGV466S22A;
-				INFOPLIST_FILE = "ViperBase-SampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "SOL.ViperBase-SampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperBase-Sample.app/ViperBase-Sample";
 			};
 			name = Release;
 		};
@@ -440,14 +388,7 @@
 				FF482E691EB9F297004DEE00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		FF482E6A1EB9F297004DEE00 /* Build configuration list for PBXNativeTarget "ViperBase-SampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF482E6B1EB9F297004DEE00 /* Debug */,
-				FF482E6C1EB9F297004DEE00 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
