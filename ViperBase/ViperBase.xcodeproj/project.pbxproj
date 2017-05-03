@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF24530C1EB903590017D32D /* PresentableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24530B1EB903590017D32D /* PresentableTabBarController.swift */; };
+		FF482EC11EBA2F91004DEE00 /* StoryboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF482EC01EBA2F91004DEE00 /* StoryboardHandler.swift */; };
 		FF643B931EB3AD9800B067D4 /* StackRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643B921EB3AD9800B067D4 /* StackRouterInterface.swift */; };
 		FF643B951EB3AF1B00B067D4 /* ContainerRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643B941EB3AF1B00B067D4 /* ContainerRouterInterface.swift */; };
 		FF919D641EB353EA0003A85C /* ViperBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF919D5A1EB353EA0003A85C /* ViperBase.framework */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		FF24530B1EB903590017D32D /* PresentableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableTabBarController.swift; sourceTree = "<group>"; };
+		FF482EC01EBA2F91004DEE00 /* StoryboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHandler.swift; sourceTree = "<group>"; };
 		FF643B921EB3AD9800B067D4 /* StackRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackRouterInterface.swift; sourceTree = "<group>"; };
 		FF643B941EB3AF1B00B067D4 /* ContainerRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerRouterInterface.swift; sourceTree = "<group>"; };
 		FF919D5A1EB353EA0003A85C /* ViperBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViperBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 				FFA6DD301EB8E08D003D7784 /* Services */,
 				FF919D5E1EB353EA0003A85C /* Info.plist */,
 				FF919D5D1EB353EA0003A85C /* ViperBase.h */,
+				FF482EC01EBA2F91004DEE00 /* StoryboardHandler.swift */,
 			);
 			path = ViperBase;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				FF919D9B1EB393040003A85C /* Interactor.swift in Sources */,
 				FF643B951EB3AF1B00B067D4 /* ContainerRouterInterface.swift in Sources */,
 				FF919D8C1EB357E50003A85C /* PresentableView.swift in Sources */,
+				FF482EC11EBA2F91004DEE00 /* StoryboardHandler.swift in Sources */,
 				FF24530C1EB903590017D32D /* PresentableTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

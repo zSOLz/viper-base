@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ArticleDetailsInteractorBuilder {
-    func articleDetailsInteractor(with atricleId: String) -> ArticleDetailsInteractorInterface
+    func articleDetailsInteractor(withArticleId atricleId: String) -> ArticleDetailsInteractorInterface
 }

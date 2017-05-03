@@ -36,7 +36,7 @@ final class NewsFeedInteractor: Interactor, NewsFeedInteractorInterface {
         return newsFeedDataSession.articles.count
     }
     
-    func articleDetailsInteractor(with articleId: NewsFeedArticle.Id) -> ArticleDetailsInteractorInterface {
-        return detailsInteractorBuilder.articleDetailsInteractor(with: articleId)
+    func articleDetailsInteractor(withArticleId articleId: NewsFeedArticle.Id) -> ArticleDetailsInteractorInterface {
+        return detailsInteractorBuilder.articleDetailsInteractor(withArticleId: articleId)
     }
 }
