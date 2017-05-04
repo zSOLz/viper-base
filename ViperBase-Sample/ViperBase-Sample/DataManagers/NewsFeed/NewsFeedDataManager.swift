@@ -21,21 +21,39 @@ final class NewsFeedDataManager: NSObject, NewsFeedDataManagerInterface {
             articles.append(NewsFeedArticle(articleId: "1",
                                             title: "Preview for May FOMC",
                                             authorName: "Christopher Vecchio",
-                                            image: nil,
+                                            imageName: "finance-1",
                                             text: "Without new economic projections today or a press conferece, there's no shot the Fed raises rates. Instead, look to the policy statement to be the catalyst for price action."))
             
             articles.append(NewsFeedArticle(articleId: "2",
                                             title: "Charts Ahead of FOMC",
                                             authorName: "Ilya Spivak",
-                                            image: nil,
+                                            imageName: "finance-2",
                                             text: "Today, we started off by looking at the US Dollar Index (DXY) ahead of the FOMC rate decision and policy statement later today. No expectation of a move out of the Fed, so traders will focus on the language in the statement for clues as to future moves."))
             
             articles.append(NewsFeedArticle(articleId: "3",
-                                            title: "Euro to Look Past GDP Data",
-                                            authorName: "Christopher Vecchio",
-                                            image: nil,
+                                            title: "News in VIPER Arhitecture",
+                                            authorName: "Andrew Solovey",
+                                            imageName: nil,
                                             text: "Eurozone GDP figures headline the economic calendar in European trading hours. The on-year growth rate is expected to register at 1.7 percent in the first quarter, unchanged from the three months through December 2016. The quarterly gain is projected at 0.5 percent, also a repeat of the prior period."))
-            
+
+            articles.append(NewsFeedArticle(articleId: "4",
+                                            title: "Architecting iOS Apps with VIPER",
+                                            authorName: "Jeff Gilbert and Conrad Stoll",
+                                            imageName: "arhitecture-1",
+                                            text: "It’s well known in the field of architecture that we shape our buildings, and afterward our buildings shape us. As all programmers eventually learn, this applies just as well to building software."))
+
+            articles.append(NewsFeedArticle(articleId: "5",
+                                            title: "Ecstatic advanced and procured civility not absolute put continue",
+                                            authorName: "Vangelis Bibakis",
+                                            imageName: nil,
+                                            text: "Woody equal ask saw sir weeks aware decay. Entrance prospect removing we packages strictly is no smallest he. For hopes may chief get hours day rooms. Oh no turned behind polite piqued enough at. Forbade few through inquiry blushes you."))
+
+            articles.append(NewsFeedArticle(articleId: "6",
+                                            title: "An Introduction to Functional Programming in Swift",
+                                            authorName: "Niv Yahel",
+                                            imageName: "arhitecture-2",
+                                            text: "Swift’s grand entrance to the programming world at WWDC in 2014 was much more than just an introduction of a new language. It brought a number of new approaches to software development for the iOS and macOS platforms."))
+
             // Call success copmlete data loading
             success?(articles)
         }

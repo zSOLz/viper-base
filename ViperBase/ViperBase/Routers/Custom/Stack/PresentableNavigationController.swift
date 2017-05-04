@@ -62,7 +62,7 @@ open class PresentableNavigationController: UINavigationController, ViewInterfac
     
     // MARK: - ContentContainerInterface
     
-    open func setupContent() {
+    dynamic open func setupContent() {
         // Does nothing
     }
 }

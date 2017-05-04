@@ -8,6 +8,15 @@
 
 import ViperBase
 
+struct NewsFeedArticleViewModel {
+    let title: String
+    let image: UIImage?
+    let author: String
+}
+
 protocol NewsFeedPresenterInterface: PresenterInterface {
-    // Empty
+    var numberOfArticles: Int { get }
+    func articleViewModel(at index: Int) -> NewsFeedArticleViewModel
+    
+    func articleTapped(at index: Int)
 }

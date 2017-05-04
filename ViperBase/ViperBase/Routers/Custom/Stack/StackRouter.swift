@@ -9,12 +9,25 @@
 import UIKit
 
 open class StackRouter: Router, StackRouterInterface {
-    open lazy var navigationController: PresentableNavigationController = PresentableNavigationController()
+    // TODO: Should we use UINavigationController instead of PresentableNavigationController
+    fileprivate var innerNavigationController: PresentableNavigationController?
+    open var navigationController: PresentableNavigationController {
+        get {
+            if let controller = innerNavigationController {
+                return controller
+            }
 
-    override public init() {
-        super.init()
-        
-        loadNavigationController()
+            loadNavigationController()
+            
+            guard let controller = innerNavigationController else {
+                fatalError("ViperBase.StackRouter.navigationController\n" +
+                    "'navigationController' variable should be initialized after 'loadNavigationController' method call.")
+            }
+            return controller
+        }
+        set {
+            innerNavigationController = newValue
+        }
     }
     
     override open var baseViewController: UIViewController {
@@ -34,7 +47,7 @@ open class StackRouter: Router, StackRouterInterface {
     }
     
     open func loadNavigationController() {
-        // Does nothing
+        navigationController = PresentableNavigationController()
     }
     
     open func containsViewController<ControllerType: UIViewController>(withType _: ControllerType) -> Bool {

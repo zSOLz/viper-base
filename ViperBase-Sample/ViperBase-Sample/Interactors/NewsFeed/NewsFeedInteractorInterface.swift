@@ -12,5 +12,5 @@ protocol NewsFeedInteractorInterface: InteractorInterface {
     func updateArticles(success: (()->Void)?, failure: ((Error)->Void)?)
     
     var numberOfArticles: Int { get }
-    func articleDetailsInteractor(withArticleId articleId: NewsFeedArticle.Id) -> ArticleDetailsInteractorInterface
+    func articleId(at index: Int) -> NewsFeedArticleId
 }

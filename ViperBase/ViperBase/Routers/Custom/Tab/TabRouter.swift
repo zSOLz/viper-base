@@ -9,12 +9,25 @@
 import UIKit
 
 open class TabRouter: Router, StackRouterInterface {
-    open lazy var tabBarController: PresentableTabBarController = PresentableTabBarController()
-    
-    override public init() {
-        super.init()
-        
-        loadTabBarController()
+    // TODO: Should we use UITabBarController instead of PresentableTabBarController
+    fileprivate var innerTabBarController: PresentableTabBarController?
+    open var tabBarController: PresentableTabBarController {
+        get {
+            if let controller = innerTabBarController {
+                return controller
+            }
+            
+            loadTabBarController()
+            
+            guard let controller = innerTabBarController else {
+                fatalError("ViperBase.TabRouter.tabBarController\n" +
+                    "'tabBarController' variable should be initialized after 'loadTabBarController' method call.")
+            }
+            return controller
+        }
+        set {
+            innerTabBarController = newValue
+        }
     }
     
     override open var baseViewController: UIViewController {
@@ -26,7 +39,7 @@ open class TabRouter: Router, StackRouterInterface {
     }
     
     open func loadTabBarController() {
-        // Does nothing
+        tabBarController = PresentableTabBarController()
     }
     
     open func containsViewController<ControllerType: UIViewController>(withType _: ControllerType) -> Bool {
@@ -47,7 +60,4 @@ open class TabRouter: Router, StackRouterInterface {
             }
         }
     }
-    
-    
-
 }

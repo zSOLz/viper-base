@@ -61,6 +61,16 @@ open class Router: NSObject, RouterInterface {
         return (baseViewController.presentedViewController != nil)
     }
 
+    // MARK: - RouterInterface
+
+    open func closeCurrentView() {
+        closeCurrentView(animated: true)
+    }
+    
+    open func closeCurrentView(animated: Bool) {
+        closeCurrentView(animated: true, completion: nil)
+    }
+
     open func closeCurrentView(animated: Bool, completion: (()->())?) {
         if shouldAutomaticallyDismissModalController && hasPresentedViewController {
             baseViewController.dismiss(animated: animated, completion: completion)

@@ -8,8 +8,7 @@
 
 import ViperBase
 
-final class NewsFeedRouter: StackRouter, NewsFeedRouterInterface {
-    let storyboard = UIStoryboard(name: "NewsFeed", bundle: nil)
+final class NewsFeedRouter: StackRouter {
     let newsFeedAssembly: NewsFeedAssemblyInterface
     
     init(newsFeedAssembly: NewsFeedAssemblyInterface) {
@@ -17,14 +16,16 @@ final class NewsFeedRouter: StackRouter, NewsFeedRouterInterface {
     }
     
     override open func loadNavigationController() {
-        navigationController = storyboard.instantiateInitialViewController() as! PresentableNavigationController
+        super.loadNavigationController()
+        
+        navigationController.viewControllers = [newsFeedAssembly.newsFeedViewController()]
     }
-    
-    // MARK: - NewsFeedRouterInterface
-    
-    func showArticleDetails(with articleId: NewsFeedArticle.Id) {
-        activeViewController?.performSegue(withIdentifier: "", configuratoin: { segue in
-            return false
-        })
+}
+
+// MARK: - NewsFeedRouterInterface
+extension NewsFeedRouter: NewsFeedRouterInterface {
+    func showArticleDetails(with articleId: NewsFeedArticleId) {
+        let articleDetailsController = newsFeedAssembly.articleDetailsViewController(withArticleId: articleId)
+        navigationController.pushViewController(articleDetailsController, animated: true)
     }
 }

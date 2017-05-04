@@ -9,5 +9,8 @@
 import ViperBase
 
 protocol ArticleDetailsInteractorInterface: InteractorInterface {
-    // Empty
+    var title: String { get }
+    var authorName: String { get }
+    var imageName: String? { get }
+    var text: String { get }
 }

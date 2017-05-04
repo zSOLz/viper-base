@@ -8,12 +8,12 @@
 
 import UIKit
 
+typealias NewsFeedArticleId = String
+
 struct NewsFeedArticle {
-    typealias Id = String
-    
-    let articleId: Id
+    let articleId: NewsFeedArticleId
     let title: String
     let authorName: String
-    let image: UIImage?
+    let imageName: String?
     let text: String
 }

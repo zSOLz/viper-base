@@ -9,5 +9,5 @@
 import ViperBase
 
 protocol ArticleDetailsPresenterInterface: PresenterInterface {
-    // Empty
+    func closeButtonTapped()
 }

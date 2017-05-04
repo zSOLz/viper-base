@@ -9,7 +9,11 @@
 import UIKit
 
 open class Presenter: NSObject, PresenterInterface {
-    open var routerInterface: RouterInterface?
+    open weak var routerInterface: RouterInterface?
+    
+    public init(router: RouterInterface? = nil) {
+        routerInterface = router
+    }
     
     open func viewDidSetup() {
         // Does nothing

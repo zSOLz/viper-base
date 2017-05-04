@@ -11,7 +11,7 @@ import Foundation
 final class NewsFeedDataSession {
     var articles = [NewsFeedArticle]()
     
-    func article(withId articleId: NewsFeedArticle.Id) -> NewsFeedArticle? {
+    func article(withId articleId: NewsFeedArticleId) -> NewsFeedArticle? {
         return articles.first { $0.articleId == articleId }
     }
 }

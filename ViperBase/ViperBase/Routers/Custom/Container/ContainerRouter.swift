@@ -9,8 +9,26 @@
 import UIKit
 
 open class ContainerRouter: Router, ContainerRouterInterface {
-    open lazy var containerViewController: ContainerViewController = ContainerViewController()
-    
+    fileprivate var innerContainerViewController: ContainerViewController?
+    open var containerViewController: ContainerViewController {
+        get {
+            if let controller = innerContainerViewController {
+                return controller
+            }
+            
+            loadContainerViewController()
+            
+            guard let controller = innerContainerViewController else {
+                fatalError("ViperBase.ContainerRouter.containerViewController\n" +
+                    "'containerViewController' variable should be initialized after 'loadContainerViewController' method call.")
+            }
+            return controller
+        }
+        set {
+            innerContainerViewController = newValue
+        }
+    }
+
     open var contentRouter: Router? {
         get {
             return childRouters.first
@@ -26,14 +44,8 @@ open class ContainerRouter: Router, ContainerRouterInterface {
         }
     }
     
-    override public init() {
-        super.init()
-        
-        loadContainerController()
-    }
-    
-    open func loadContainerController() {
-        // Does nothing
+    open func loadContainerViewController() {
+        containerViewController = ContainerViewController()
     }
 
     override open var baseViewController: UIViewController {

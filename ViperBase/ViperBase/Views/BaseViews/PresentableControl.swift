@@ -62,7 +62,7 @@ open class PresentableControl: UIControl, ViewInterface, ContentContainerInterfa
     
     // MARK: - ContentContainerInterface
     
-    open func setupContent() {
+    dynamic open func setupContent() {
         // Does nothing
     }
 }

@@ -9,5 +9,5 @@
 import ViperBase
 
 protocol NewsFeedRouterInterface: RouterInterface {
-    func showArticleDetails(with articleId: NewsFeedArticle.Id)
+    func showArticleDetails(with articleId: NewsFeedArticleId)
 }

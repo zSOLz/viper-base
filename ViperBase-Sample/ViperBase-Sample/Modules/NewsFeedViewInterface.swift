@@ -1,5 +1,5 @@
 //
-//  NewsFeedViewControllerInterface.swift
+//  NewsFeedViewInterface.swift
 //  ViperBase-Sample
 //
 //  Created by SOL on 03.05.17.
@@ -8,6 +8,6 @@
 
 import ViperBase
 
-protocol NewsFeedViewControllerInterface: ViewInterface {
-    // Empty
+protocol NewsFeedViewInterface: ViewInterface {
+    func reloadNewsFeed()
 }

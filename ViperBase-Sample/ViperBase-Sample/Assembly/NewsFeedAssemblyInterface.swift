@@ -10,5 +10,5 @@ import ViperBase
 
 protocol NewsFeedAssemblyInterface {
     func newsFeedViewController() -> NewsFeedViewController
-    func articleDetailsViewController() -> ArticleDetailsViewController
+    func articleDetailsViewController(withArticleId articleId: NewsFeedArticleId) -> ArticleDetailsViewController
 }

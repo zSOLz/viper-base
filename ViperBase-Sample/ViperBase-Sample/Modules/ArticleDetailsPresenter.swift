@@ -8,8 +8,34 @@
 
 import ViperBase
 
-final class ArticleDetailsPresenter: Presenter, ArticleDetailsPresenterInterface {
+final class ArticleDetailsPresenter: Presenter {
+    fileprivate var articleDetailsInteractor: ArticleDetailsInteractorInterface
     
-    // MARK: - ArticleDetailsPresenterInterface
+    init(router: RouterInterface, articleDetailsInteractor: ArticleDetailsInteractorInterface) {
+        self.articleDetailsInteractor = articleDetailsInteractor
+        
+        super.init(router: router)
+    }
     
+    override func viewDidLoad() {
+        
+    }
+}
+
+// MARK: - Fileprivate
+fileprivate extension ArticleDetailsPresenter {
+    final var view: ArticleDetailsViewInterface? {
+        return viewInterface as? ArticleDetailsViewInterface
+    }
+    
+    final var router: NewsFeedRouterInterface? {
+        return routerInterface as? NewsFeedRouterInterface
+    }
+}
+
+// MARK: - ArticleDetailsPresenterInterface
+extension ArticleDetailsPresenter: ArticleDetailsPresenterInterface {
+    func closeButtonTapped() {
+        router?.closeCurrentView()
+    }
 }
