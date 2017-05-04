@@ -18,6 +18,16 @@ final class NewsFeedDataManager: NSObject, NewsFeedDataManagerInterface {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
             var articles = [NewsFeedArticle]()
             
+            articles.append(NewsFeedArticle(articleId: "4",
+                                            title: "How to open details page",
+                                            authorName: "Andrew Solovey",
+                                            imageName: "arhitecture-1",
+                                            text: "Pass item ID to router and then build correct controller with correct parameters.\n\n" +
+                                                  "See call stack:\nNewsFeedViewController.tableView(_:didSelectRowAt:)\n" +
+                                                  "NewsFeedPresenterInterface.articleTapped(at:)\n" +
+                                                  "NewsFeedRouter.showArticleDetails(with:)\n" +
+                                                  "NewsFeedAssembly.articleDetailsViewController(withArticleId:)"))
+
             articles.append(NewsFeedArticle(articleId: "1",
                                             title: "Preview for May FOMC",
                                             authorName: "Christopher Vecchio",
@@ -35,12 +45,6 @@ final class NewsFeedDataManager: NSObject, NewsFeedDataManagerInterface {
                                             authorName: "Andrew Solovey",
                                             imageName: nil,
                                             text: "Eurozone GDP figures headline the economic calendar in European trading hours. The on-year growth rate is expected to register at 1.7 percent in the first quarter, unchanged from the three months through December 2016. The quarterly gain is projected at 0.5 percent, also a repeat of the prior period."))
-
-            articles.append(NewsFeedArticle(articleId: "4",
-                                            title: "Architecting iOS Apps with VIPER",
-                                            authorName: "Jeff Gilbert and Conrad Stoll",
-                                            imageName: "arhitecture-1",
-                                            text: "It’s well known in the field of architecture that we shape our buildings, and afterward our buildings shape us. As all programmers eventually learn, this applies just as well to building software."))
 
             articles.append(NewsFeedArticle(articleId: "5",
                                             title: "Ecstatic advanced and procured civility not absolute put continue",

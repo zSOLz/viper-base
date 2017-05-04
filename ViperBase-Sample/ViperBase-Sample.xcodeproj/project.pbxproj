@@ -41,6 +41,7 @@
 		FF7A12C51EBB80A1008632B8 /* NewsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7A12C41EBB80A1008632B8 /* NewsFeedViewController.xib */; };
 		FF7A12C81EBB8224008632B8 /* NewsFeedTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7A12C71EBB8224008632B8 /* NewsFeedTableCell.xib */; };
 		FF7A12CB1EBB8B25008632B8 /* UITableViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7A12CA1EBB8B25008632B8 /* UITableViewCell+Utils.swift */; };
+		FF8113F31EBBBD6900A1B77E /* ArticleDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8113F21EBBBD6900A1B77E /* ArticleDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -93,6 +94,7 @@
 		FF7A12C41EBB80A1008632B8 /* NewsFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedViewController.xib; sourceTree = "<group>"; };
 		FF7A12C71EBB8224008632B8 /* NewsFeedTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedTableCell.xib; sourceTree = "<group>"; };
 		FF7A12CA1EBB8B25008632B8 /* UITableViewCell+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Utils.swift"; sourceTree = "<group>"; };
+		FF8113F21EBBBD6900A1B77E /* ArticleDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +320,7 @@
 			children = (
 				FF482EB41EBA1677004DEE00 /* ArticleDetailsViewController.swift */,
 				FF482EB51EBA1677004DEE00 /* ArticleDetailsViewInterface.swift */,
+				FF8113F21EBBBD6900A1B77E /* ArticleDetailsViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				FF482E581EB9F296004DEE00 /* LaunchScreen.storyboard in Resources */,
 				FF482E551EB9F296004DEE00 /* Assets.xcassets in Resources */,
 				FF7A12C51EBB80A1008632B8 /* NewsFeedViewController.xib in Resources */,
+				FF8113F31EBBBD6900A1B77E /* ArticleDetailsViewController.xib in Resources */,
 				FF7A12C81EBB8224008632B8 /* NewsFeedTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

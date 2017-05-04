@@ -8,6 +8,13 @@
 
 import ViperBase
 
+struct ArticleDetailsViewModel {
+    let title: String
+    let image: UIImage?
+    let author: String
+    let text: String
+}
+
 protocol ArticleDetailsViewInterface: ViewInterface {
-    // Empty
+    func setup(viewModel: ArticleDetailsViewModel)
 }

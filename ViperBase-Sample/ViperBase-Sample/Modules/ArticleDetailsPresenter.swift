@@ -18,7 +18,22 @@ final class ArticleDetailsPresenter: Presenter {
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         
+        setupArticle()
+    }
+    
+    fileprivate func setupArticle() {
+        var articleImage: UIImage? = nil
+        if let imageName = articleDetailsInteractor.imageName {
+            articleImage = UIImage(named: imageName)
+        }
+
+        let viewModel = ArticleDetailsViewModel(title: articleDetailsInteractor.title,
+                                                image: articleImage,
+                                                author: articleDetailsInteractor.authorName,
+                                                text: articleDetailsInteractor.text)
+        view?.setup(viewModel: viewModel)
     }
 }
 

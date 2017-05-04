@@ -40,7 +40,7 @@ extension NewsFeedViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    public func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         presenter.articleTapped(at: indexPath.row)
     }
