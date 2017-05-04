@@ -75,11 +75,11 @@
 		FF482E9A1EBA0412004DEE00 /* NewsFeedPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedPresenterInterface.swift; sourceTree = "<group>"; };
 		FF482E9F1EBA044A004DEE00 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		FF482EA01EBA044A004DEE00 /* NewsFeedViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewInterface.swift; sourceTree = "<group>"; };
-		FF482EA41EBA06DB004DEE00 /* ArticleDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDetailsInteractor.swift; path = NewsFeed/ArticleDetailsInteractor.swift; sourceTree = "<group>"; };
-		FF482EA51EBA06DB004DEE00 /* ArticleDetailsInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDetailsInteractorInterface.swift; path = NewsFeed/ArticleDetailsInteractorInterface.swift; sourceTree = "<group>"; };
+		FF482EA41EBA06DB004DEE00 /* ArticleDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDetailsInteractor.swift; path = ArticleDetailsInteractor.swift; sourceTree = "<group>"; };
+		FF482EA51EBA06DB004DEE00 /* ArticleDetailsInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDetailsInteractorInterface.swift; path = ArticleDetailsInteractorInterface.swift; sourceTree = "<group>"; };
 		FF482EA81EBA082E004DEE00 /* ArticleDetailsInteractorBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailsInteractorBuilder.swift; sourceTree = "<group>"; };
-		FF482EAA1EBA15CF004DEE00 /* NewsFeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsFeedRouter.swift; path = "ViperBase-Sample/Assembly/NewsFeedRouter.swift"; sourceTree = SOURCE_ROOT; };
-		FF482EAB1EBA15CF004DEE00 /* NewsFeedRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsFeedRouterInterface.swift; path = "ViperBase-Sample/Assembly/NewsFeedRouterInterface.swift"; sourceTree = SOURCE_ROOT; };
+		FF482EAA1EBA15CF004DEE00 /* NewsFeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsFeedRouter.swift; path = NewsFeedRouter.swift; sourceTree = "<group>"; };
+		FF482EAB1EBA15CF004DEE00 /* NewsFeedRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsFeedRouterInterface.swift; path = NewsFeedRouterInterface.swift; sourceTree = "<group>"; };
 		FF482EB01EBA160A004DEE00 /* ArticleDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailsPresenter.swift; sourceTree = "<group>"; };
 		FF482EB11EBA160A004DEE00 /* ArticleDetailsPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailsPresenterInterface.swift; sourceTree = "<group>"; };
 		FF482EB41EBA1677004DEE00 /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 		FF482EBB1EBA27DC004DEE00 /* NewsFeedAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedAssembly.swift; sourceTree = "<group>"; };
 		FF482EBC1EBA27DC004DEE00 /* NewsFeedAssemblyInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedAssemblyInterface.swift; sourceTree = "<group>"; };
 		FF482EC31EBA474A004DEE00 /* NewsFeedTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedTableCell.swift; sourceTree = "<group>"; };
-		FF482EC51EBA8A7D004DEE00 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationAssembly.swift; path = "ViperBase-Sample/Modules/ApplicationAssembly.swift"; sourceTree = SOURCE_ROOT; };
-		FF482EC61EBA8A7D004DEE00 /* ApplicationAssemblyInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationAssemblyInterface.swift; path = "ViperBase-Sample/Modules/ApplicationAssemblyInterface.swift"; sourceTree = SOURCE_ROOT; };
+		FF482EC51EBA8A7D004DEE00 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationAssembly.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		FF482EC61EBA8A7D004DEE00 /* ApplicationAssemblyInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationAssemblyInterface.swift; path = ApplicationAssemblyInterface.swift; sourceTree = "<group>"; };
 		FF482ECA1EBA8B06004DEE00 /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
 		FF482ECB1EBA8B06004DEE00 /* ApplicationRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouterInterface.swift; sourceTree = "<group>"; };
 		FF7A12C41EBB80A1008632B8 /* NewsFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedViewController.xib; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 				FF482EAB1EBA15CF004DEE00 /* NewsFeedRouterInterface.swift */,
 			);
 			name = NewsFeed;
-			path = ../Assembly/NewsFeed;
+			path = NewsFeed;
 			sourceTree = "<group>";
 		};
 		FF482E7B1EB9F592004DEE00 /* User */ = {
@@ -247,7 +247,7 @@
 				FF482E901EBA00F0004DEE00 /* NewsFeedInteractorInterface.swift */,
 			);
 			name = NewsFeedInteractor;
-			path = NewsFeed;
+			path = NewsFeedInteractor;
 			sourceTree = "<group>";
 		};
 		FF482E8B1EB9FF97004DEE00 /* NewsFeed */ = {
@@ -275,6 +275,7 @@
 				FF482E9E1EBA0420004DEE00 /* View */,
 			);
 			name = NewsFeed;
+			path = NewsFeed;
 			sourceTree = "<group>";
 		};
 		FF482E981EBA03DF004DEE00 /* ArticleDetails */ = {
@@ -284,6 +285,7 @@
 				FF482EB81EBA16A1004DEE00 /* View */,
 			);
 			name = ArticleDetails;
+			path = ArticleDetails;
 			sourceTree = "<group>";
 		};
 		FF482E9D1EBA0418004DEE00 /* Presenter */ = {
@@ -293,6 +295,7 @@
 				FF482E9A1EBA0412004DEE00 /* NewsFeedPresenterInterface.swift */,
 			);
 			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		FF482E9E1EBA0420004DEE00 /* View */ = {
@@ -304,6 +307,7 @@
 				FF7A12C41EBB80A1008632B8 /* NewsFeedViewController.xib */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		FF482EA31EBA06BD004DEE00 /* ArticleDetailsInteractor */ = {
@@ -313,6 +317,7 @@
 				FF482EA51EBA06DB004DEE00 /* ArticleDetailsInteractorInterface.swift */,
 			);
 			name = ArticleDetailsInteractor;
+			path = ArticleDetailsInteractor;
 			sourceTree = "<group>";
 		};
 		FF482EB81EBA16A1004DEE00 /* View */ = {
@@ -323,6 +328,7 @@
 				FF8113F21EBBBD6900A1B77E /* ArticleDetailsViewController.xib */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		FF482EB91EBA16A9004DEE00 /* Presenter */ = {
@@ -332,6 +338,7 @@
 				FF482EB11EBA160A004DEE00 /* ArticleDetailsPresenterInterface.swift */,
 			);
 			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		FF482EBA1EBA27B7004DEE00 /* NewsFeed */ = {
@@ -341,6 +348,7 @@
 				FF482EBC1EBA27DC004DEE00 /* NewsFeedAssemblyInterface.swift */,
 			);
 			name = NewsFeed;
+			path = NewsFeed;
 			sourceTree = "<group>";
 		};
 		FF482EC91EBA8AF1004DEE00 /* ApplicationRouter */ = {
@@ -350,6 +358,7 @@
 				FF482ECB1EBA8B06004DEE00 /* ApplicationRouterInterface.swift */,
 			);
 			name = ApplicationRouter;
+			path = ApplicationRouter;
 			sourceTree = "<group>";
 		};
 		FF7A12C61EBB8215008632B8 /* NewsFeedTableCell */ = {
@@ -359,6 +368,7 @@
 				FF7A12C71EBB8224008632B8 /* NewsFeedTableCell.xib */,
 			);
 			name = NewsFeedTableCell;
+			path = NewsFeedTableCell;
 			sourceTree = "<group>";
 		};
 		FF7A12C91EBB8B0D008632B8 /* Extensions */ = {
@@ -367,6 +377,7 @@
 				FF7A12CA1EBB8B25008632B8 /* UITableViewCell+Utils.swift */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
