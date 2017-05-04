@@ -8,17 +8,25 @@
 
 import ViperBase
 
-final class ApplicationRouter: ContainerRouter {
+final class ApplicationRouter: TabRouter {
     let applicationAssembly: ApplicationAssemblyInterface
     
     init(applicationAssembly: ApplicationAssemblyInterface) {
         self.applicationAssembly = applicationAssembly
     }
     
-    override open func loadContainerViewController() {
-        super.loadContainerViewController()
+    override open func loadTabBarController() {
+        super.loadTabBarController()
         
-        contentRouter = applicationAssembly.newsFeedRouter()
+        let newsFeedRouter = applicationAssembly.newsFeedRouter()
+        newsFeedRouter.baseViewController.tabBarItem.title = "News"
+        
+        let accountViewController = UIViewController()
+        accountViewController.view.backgroundColor = UIColor.white
+        accountViewController.tabBarItem.title = "Account"
+        
+        tabBarController.viewControllers = [newsFeedRouter.baseViewController,
+                                            accountViewController]
     }
 }
 
