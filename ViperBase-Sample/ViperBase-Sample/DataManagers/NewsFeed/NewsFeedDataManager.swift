@@ -8,14 +8,16 @@
 
 import Foundation
 
-final class NewsFeedDataManager: NSObject, NewsFeedDataManagerInterface {
-    
-    // MARK: - NewsFeedDataManagerInterface
-    
+final class NewsFeedDataManager: NSObject {
+    // Empty
+}
+
+// MARK: - NewsFeedDataManagerInterface
+extension NewsFeedDataManager: NewsFeedDataManagerInterface {
     func loadNews(success: (([NewsFeedArticle])->Void)?, failure: ((Error)->Void)?) {
         // Simulate internet delay
         // httpDataSource.get(endpoint: "newsFeed", success: ... , failure: ... )
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(2)) {
             var articles = [NewsFeedArticle]()
             
             articles.append(NewsFeedArticle(articleId: "4",

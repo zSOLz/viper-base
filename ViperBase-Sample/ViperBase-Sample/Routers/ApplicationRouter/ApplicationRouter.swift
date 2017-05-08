@@ -27,6 +27,7 @@ final class ApplicationRouter: TabRouter {
         
         tabBarController.viewControllers = [newsFeedRouter.baseViewController,
                                             accountViewController]
+        addChild(router: newsFeedRouter)
     }
 }
 
