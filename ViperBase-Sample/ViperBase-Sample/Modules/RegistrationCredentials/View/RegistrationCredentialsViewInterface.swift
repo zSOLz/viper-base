@@ -12,4 +12,5 @@ protocol RegistrationCredentialsViewInterface: ViewInterface {
     func setSubmitButton(enabled: Bool)
     func setSetRepeatPasswordError(hidden: Bool)
     func setActivityIndicator(visible: Bool)
+    func stopEditing()
 }

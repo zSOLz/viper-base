@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF33989A1EC26842002A7711 /* KeyboardHeightObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3398991EC26842002A7711 /* KeyboardHeightObserver.swift */; };
+		FF33989C1EC26C40002A7711 /* TimeInterval+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33989B1EC26C40002A7711 /* TimeInterval+Utils.swift */; };
 		FF482E4E1EB9F296004DEE00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF482E4D1EB9F296004DEE00 /* AppDelegate.swift */; };
 		FF482E551EB9F296004DEE00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF482E541EB9F296004DEE00 /* Assets.xcassets */; };
 		FF482E581EB9F296004DEE00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF482E561EB9F296004DEE00 /* LaunchScreen.storyboard */; };
@@ -100,6 +102,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF3398991EC26842002A7711 /* KeyboardHeightObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHeightObserver.swift; sourceTree = "<group>"; };
+		FF33989B1EC26C40002A7711 /* TimeInterval+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Utils.swift"; sourceTree = "<group>"; };
 		FF482E4A1EB9F296004DEE00 /* ViperBase-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViperBase-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF482E4D1EB9F296004DEE00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF482E541EB9F296004DEE00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,8 +167,8 @@
 		FF7A12CA1EBB8B25008632B8 /* UITableViewCell+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Utils.swift"; sourceTree = "<group>"; };
 		FF8113F21EBBBD6900A1B77E /* ArticleDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleDetailsViewController.xib; sourceTree = "<group>"; };
 		FFC176F61EC0C28800392ECE /* ApplicationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
-		FFF6F5EB1EC07444006E2FC9 /* ProfileAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileAssembly.swift; path = "ViperBase-Sample/Modules/ProfileAssembly.swift"; sourceTree = SOURCE_ROOT; };
-		FFF6F5EC1EC07444006E2FC9 /* ProfileAssemblyInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileAssemblyInterface.swift; path = "ViperBase-Sample/Modules/ProfileAssemblyInterface.swift"; sourceTree = SOURCE_ROOT; };
+		FFF6F5EB1EC07444006E2FC9 /* ProfileAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileAssembly.swift; path = ProfileAssembly.swift; sourceTree = "<group>"; };
+		FFF6F5EC1EC07444006E2FC9 /* ProfileAssemblyInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileAssemblyInterface.swift; path = ProfileAssemblyInterface.swift; sourceTree = "<group>"; };
 		FFF6F5EF1EC07454006E2FC9 /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		FFF6F5F01EC07454006E2FC9 /* ProfileRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouterInterface.swift; sourceTree = "<group>"; };
 		FFF6F5F41EC075C7006E2FC9 /* UserDataSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataSession.swift; sourceTree = "<group>"; };
@@ -191,6 +195,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF3398981EC26353002A7711 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FF3398991EC26842002A7711 /* KeyboardHeightObserver.swift */,
+			);
+			name = Helpers;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		FF482E411EB9F296004DEE00 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +233,7 @@
 				FF482E761EB9F3C5004DEE00 /* Interactors */,
 				FFC176F51EC0C26000392ECE /* Errors */,
 				FF7A12C91EBB8B0D008632B8 /* Extensions */,
+				FF3398981EC26353002A7711 /* Helpers */,
 				FF482E781EB9F3EC004DEE00 /* SupportingFiles */,
 			);
 			path = "ViperBase-Sample";
@@ -335,7 +349,7 @@
 				FFF6F5EC1EC07444006E2FC9 /* ProfileAssemblyInterface.swift */,
 			);
 			name = ProfileAssembly;
-			path = User;
+			path = ProfileAssembly;
 			sourceTree = "<group>";
 		};
 		FF482E8A1EB9FF8F004DEE00 /* NewsFeedInteractor */ = {
@@ -396,9 +410,9 @@
 			isa = PBXGroup;
 			children = (
 				FF7A12C61EBB8215008632B8 /* NewsFeedTableCell */,
+				FF7A12C41EBB80A1008632B8 /* NewsFeedViewController.xib */,
 				FF482E9F1EBA044A004DEE00 /* NewsFeedViewController.swift */,
 				FF482EA01EBA044A004DEE00 /* NewsFeedViewInterface.swift */,
-				FF7A12C41EBB80A1008632B8 /* NewsFeedViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -415,9 +429,9 @@
 		FF482EB81EBA16A1004DEE00 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF8113F21EBBBD6900A1B77E /* ArticleDetailsViewController.xib */,
 				FF482EB41EBA1677004DEE00 /* ArticleDetailsViewController.swift */,
 				FF482EB51EBA1677004DEE00 /* ArticleDetailsViewInterface.swift */,
-				FF8113F21EBBBD6900A1B77E /* ArticleDetailsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,16 +470,18 @@
 				FFF6F5F01EC07454006E2FC9 /* ProfileRouterInterface.swift */,
 			);
 			name = Profile;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		FF6C220C1EC10F06007A3820 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FF6C22031EC10EBA007A3820 /* RegistrationEmailViewController.swift */,
 				FF6C22041EC10EBA007A3820 /* RegistrationEmailViewController.xib */,
+				FF6C22031EC10EBA007A3820 /* RegistrationEmailViewController.swift */,
 				FF6C22051EC10EBA007A3820 /* RegistrationEmailViewInterface.swift */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		FF6C220D1EC10F0C007A3820 /* Presenter */ = {
@@ -475,16 +491,18 @@
 				FF6C22021EC10EBA007A3820 /* RegistrationEmailPresenterInterface.swift */,
 			);
 			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		FF6C22191EC1D4CE007A3820 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FF6C22101EC1D489007A3820 /* RegistrationCredentialsViewController.swift */,
 				FF6C22111EC1D489007A3820 /* RegistrationCredentialsViewController.xib */,
+				FF6C22101EC1D489007A3820 /* RegistrationCredentialsViewController.swift */,
 				FF6C22121EC1D489007A3820 /* RegistrationCredentialsViewInterface.swift */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		FF6C221A1EC1D4D4007A3820 /* Presenter */ = {
@@ -494,6 +512,7 @@
 				FF6C220F1EC1D489007A3820 /* RegistrationCredentialsPresenterInterface.swift */,
 			);
 			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		FF6C221B1EC1E713007A3820 /* UserProfile */ = {
@@ -503,16 +522,18 @@
 				FF6C22261EC1EC20007A3820 /* View */,
 			);
 			name = UserProfile;
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		FF6C22261EC1EC20007A3820 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FF6C221E1EC1EC13007A3820 /* UserProfileViewController.swift */,
 				FF6C221F1EC1EC13007A3820 /* UserProfileViewController.xib */,
+				FF6C221E1EC1EC13007A3820 /* UserProfileViewController.swift */,
 				FF6C22201EC1EC13007A3820 /* UserProfileViewInterface.swift */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		FF6C22271EC1EC25007A3820 /* Presenter */ = {
@@ -522,6 +543,7 @@
 				FF6C221D1EC1EC13007A3820 /* UserProfilePresenterInterface.swift */,
 			);
 			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		FF6C22281EC1F067007A3820 /* UserWelcome */ = {
@@ -531,16 +553,18 @@
 				FF6C22341EC1F110007A3820 /* View */,
 			);
 			name = UserWelcome;
+			path = UserWelcome;
 			sourceTree = "<group>";
 		};
 		FF6C22341EC1F110007A3820 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FF6C222B1EC1F09A007A3820 /* UserWelcomeViewController.swift */,
 				FF6C222C1EC1F09A007A3820 /* UserWelcomeViewController.xib */,
+				FF6C222B1EC1F09A007A3820 /* UserWelcomeViewController.swift */,
 				FF6C222D1EC1F09A007A3820 /* UserWelcomeViewInterface.swift */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		FF6C22351EC1F116007A3820 /* Presenter */ = {
@@ -550,6 +574,7 @@
 				FF6C222A1EC1F09A007A3820 /* UserWelcomePresenterInterface.swift */,
 			);
 			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		FF6C22361EC1F8CA007A3820 /* RegistrationAssembly */ = {
@@ -559,6 +584,7 @@
 				FF6C22381EC1F8DE007A3820 /* RegistrationAssemblyInterface.swift */,
 			);
 			name = RegistrationAssembly;
+			path = RegistrationAssembly;
 			sourceTree = "<group>";
 		};
 		FF6C22421EC1FE8F007A3820 /* Builders */ = {
@@ -567,6 +593,7 @@
 				FF482EA81EBA082E004DEE00 /* ArticleDetailsInteractorBuilder.swift */,
 			);
 			name = Builders;
+			path = Builders;
 			sourceTree = "<group>";
 		};
 		FF7A12C61EBB8215008632B8 /* NewsFeedTableCell */ = {
@@ -582,6 +609,7 @@
 			isa = PBXGroup;
 			children = (
 				FF7A12CA1EBB8B25008632B8 /* UITableViewCell+Utils.swift */,
+				FF33989B1EC26C40002A7711 /* TimeInterval+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -592,6 +620,7 @@
 				FFC176F61EC0C28800392ECE /* ApplicationError.swift */,
 			);
 			name = Errors;
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		FFC176F81EC1083200392ECE /* RegistrationEmail */ = {
@@ -601,6 +630,7 @@
 				FF6C220C1EC10F06007A3820 /* View */,
 			);
 			name = RegistrationEmail;
+			path = RegistrationEmail;
 			sourceTree = "<group>";
 		};
 		FFC176FC1EC1087500392ECE /* RegistrationCredentials */ = {
@@ -610,6 +640,7 @@
 				FF6C22191EC1D4CE007A3820 /* View */,
 			);
 			name = RegistrationCredentials;
+			path = RegistrationCredentials;
 			sourceTree = "<group>";
 		};
 		FFF6F5EA1EC07409006E2FC9 /* Registration */ = {
@@ -619,6 +650,7 @@
 				FF6C21FD1EC10DD5007A3820 /* RegistrationRouterInterface.swift */,
 			);
 			name = Registration;
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		FFF6F5F31EC075AC006E2FC9 /* User */ = {
@@ -630,6 +662,7 @@
 				FFF6F6091EC0BDB5006E2FC9 /* UserRegistrationInfo.swift */,
 			);
 			name = User;
+			path = User;
 			sourceTree = "<group>";
 		};
 		FFF6F5FA1EC07C26006E2FC9 /* RegistrationInteractor */ = {
@@ -639,6 +672,7 @@
 				FFF6F5FD1EC07C56006E2FC9 /* RegistrationInteractorInterface.swift */,
 			);
 			name = RegistrationInteractor;
+			path = RegistrationInteractor;
 			sourceTree = "<group>";
 		};
 		FFF6F5FB1EC07C2E006E2FC9 /* UserProfileInteractor */ = {
@@ -648,6 +682,7 @@
 				FFF6F6011EC07C60006E2FC9 /* UserProfileInteractorInterface.swift */,
 			);
 			name = UserProfileInteractor;
+			path = UserProfileInteractor;
 			sourceTree = "<group>";
 		};
 		FFF6F6041EC0BC9B006E2FC9 /* UserRegistration */ = {
@@ -657,6 +692,7 @@
 				FFF6F6061EC0BCB9006E2FC9 /* UserRegistrationDataManagerInterface.swift */,
 			);
 			name = UserRegistration;
+			path = UserRegistration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -779,6 +815,7 @@
 				FFF6F6021EC07C60006E2FC9 /* UserProfileInteractor.swift in Sources */,
 				FFF6F60A1EC0BDB5006E2FC9 /* UserRegistrationInfo.swift in Sources */,
 				FF482EB31EBA160A004DEE00 /* ArticleDetailsPresenterInterface.swift in Sources */,
+				FF33989A1EC26842002A7711 /* KeyboardHeightObserver.swift in Sources */,
 				FFF6F6071EC0BCB9006E2FC9 /* UserRegistrationDataManager.swift in Sources */,
 				FF6C223D1EC1F8F8007A3820 /* Assembly.swift in Sources */,
 				FFF6F5FE1EC07C56006E2FC9 /* RegistrationInteractor.swift in Sources */,
@@ -798,6 +835,7 @@
 				FF6C220A1EC10EBA007A3820 /* RegistrationEmailViewInterface.swift in Sources */,
 				FFF6F5F51EC075C7006E2FC9 /* UserDataSession.swift in Sources */,
 				FF482EAD1EBA15CF004DEE00 /* NewsFeedRouterInterface.swift in Sources */,
+				FF33989C1EC26C40002A7711 /* TimeInterval+Utils.swift in Sources */,
 				FF6C22301EC1F09A007A3820 /* UserWelcomeViewController.swift in Sources */,
 				FFF6F5ED1EC07444006E2FC9 /* ProfileAssembly.swift in Sources */,
 				FF6C223E1EC1F8F8007A3820 /* AssemblyInterface.swift in Sources */,

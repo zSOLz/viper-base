@@ -23,6 +23,7 @@ final class RegistrationCredentialsPresenter: Presenter {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated: animated)
         
+        hideRepeatPasswordError()
         updateSubmitButtonState()
     }
 }
@@ -57,6 +58,8 @@ fileprivate extension RegistrationCredentialsPresenter {
 // MARK: - RegistrationCredentialsPresenterInterface
 extension RegistrationCredentialsPresenter: RegistrationCredentialsPresenterInterface {
     func submitButtonTapped() {
+        view?.stopEditing()
+        
         guard passwordText == repeatPasswordText else {
             view?.setSetRepeatPasswordError(hidden: false)
             return

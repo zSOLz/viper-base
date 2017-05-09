@@ -11,6 +11,9 @@ import ViperBase
 final class RegistrationEmailViewController: PresentableViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var continueButton: UIButton!
+    @IBOutlet var continueButtonBottomConstraint: NSLayoutConstraint!
+    
+    fileprivate let keyboardObserver = KeyboardHeightObserver()
     
     @IBAction func continueButtonTapped(_ sender: Any) {
         presenter?.continueButtonTapped()
@@ -53,5 +56,12 @@ extension RegistrationEmailViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel,
                                                             target: self,
                                                             action: #selector(RegistrationEmailViewController.cancelButonTapped(_:)))
+        
+        keyboardObserver.heightChangedClosure = { [weak self] height in
+            self?.continueButtonBottomConstraint.constant = height
+            UIView.animate(withDuration: .standart) { [weak self] in
+                self?.view.layoutIfNeeded()
+            }
+        }
     }
 }

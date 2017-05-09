@@ -35,23 +35,16 @@ extension ProfileRouter: ProfileRouterInterface {
     func showRegistrationScreen() {
         let registrationRouter = profileAssembly.registrationRouter()
         
-        registrationRouter.completionClosure = { [weak self, weak registrationRouter] in
+        registrationRouter.completionClosure = { [weak self, unowned registrationRouter] in
             self?.showUserProfileScreen()
-            self?.baseViewController.dismiss(animated: true)
-            
-            // Do not forget to remove child routers
-            registrationRouter?.removeFromParent()
+            self?.dismissModalRouter(registrationRouter)
         }
         
-        registrationRouter.cancelClosure = { [weak self, weak registrationRouter] in
-            self?.baseViewController.dismiss(animated: true)
-            
-            // Do not forget to remove child routers
-            registrationRouter?.removeFromParent()
+        registrationRouter.cancelClosure = { [weak self, unowned registrationRouter] in
+            self?.dismissModalRouter(registrationRouter)
         }
         
         // Add router as child to keep strong reference
-        addChild(router: registrationRouter)
-        baseViewController.present(registrationRouter.baseViewController, animated: true)
+        presentModalRouter(registrationRouter, animated: true)
     }
 }

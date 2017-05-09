@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationEmailViewController">
             <connections>
                 <outlet property="continueButton" destination="CoQ-v4-bLY" id="kfB-h2-GFg"/>
+                <outlet property="continueButtonBottomConstraint" destination="cxR-vJ-Xl3" id="gah-hg-R1O"/>
                 <outlet property="emailTextField" destination="lfD-Fr-d6H" id="Dax-ID-5dK"/>
                 <outlet property="view" destination="iN0-l3-epB" id="tC3-hq-EcA"/>
             </connections>
@@ -42,7 +43,7 @@
                     <rect key="frame" x="16" y="95" width="288" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                     <connections>
                         <action selector="emailTextChanged:" destination="-1" eventType="editingChanged" id="NR4-bD-zOM"/>
                     </connections>

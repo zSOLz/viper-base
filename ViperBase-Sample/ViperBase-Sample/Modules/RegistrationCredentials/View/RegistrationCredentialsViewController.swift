@@ -13,9 +13,12 @@ final class RegistrationCredentialsViewController: PresentableViewController {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var repeatPasswordTextField: UITextField!
     @IBOutlet var repeatPasswordErrorLabel: UILabel!
-    @IBOutlet var submitButton: UIButton!
     @IBOutlet var activityIndicatorView: UIView!
+    @IBOutlet var submitButton: UIButton!
+    @IBOutlet var submitButtonBottomConstraint: NSLayoutConstraint!
     
+    fileprivate let keyboardObserver = KeyboardHeightObserver()
+
     @IBAction func submitButtonTapped(_ sender: Any) {
         presenter?.submitButtonTapped()
     }
@@ -55,16 +58,20 @@ extension RegistrationCredentialsViewController: RegistrationCredentialsViewInte
             activityIndicatorView.alpha = 0
             view.addSubview(activityIndicatorView)
             activityIndicatorView.frame = view.bounds
-            UIView.animate(withDuration: 0.3) { [weak self] in
+            UIView.animate(withDuration: .standart) { [weak self] in
                 self?.activityIndicatorView.alpha = 1
             }
         } else {
-            UIView.animate(withDuration: 0.3, animations: { [weak self] in
+            UIView.animate(withDuration: .standart, animations: { [weak self] in
                 self?.activityIndicatorView.alpha = 0
             }, completion: { [weak self] isCompleted in
                 self?.activityIndicatorView.removeFromSuperview()
             })
         }
+    }
+    
+    func stopEditing() {
+        view.endEditing(true)
     }
 }
 
@@ -74,5 +81,12 @@ extension RegistrationCredentialsViewController {
         super.setupContent()
         
         title = "Registration: Credentials"
+        
+        keyboardObserver.heightChangedClosure = { [weak self] height in
+            self?.submitButtonBottomConstraint.constant = height
+            UIView.animate(withDuration: .standart) { [weak self] in
+                self?.view.layoutIfNeeded()
+            }
+        }
     }
 }

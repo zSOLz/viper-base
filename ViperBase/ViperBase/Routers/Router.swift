@@ -53,6 +53,28 @@ open class Router: NSObject, RouterInterface {
         self.parentRouter = nil
     }
     
+    open func presentModalRouter(_ router: Router, animated: Bool = true) {
+        addChild(router: router)
+        baseViewController.present(router.baseViewController, animated: true, completion: nil)
+    }
+    
+    open func dismissModalRouter(_ router: Router, animated: Bool = true, completion: (()->Void)? = nil) {
+        guard router.parentRouter == self else {
+            assertionFailure("ViperBase.Router.dismissModalRouter(:animated:completion:)\n" +
+                "Unable to dismiss modal router: invalid parent router")
+            return
+        }
+
+        guard router.baseViewController == baseViewController.presentedViewController else {
+            assertionFailure("ViperBase.Router.dismissModalRouter(:animated:completion:)\n" +
+                "Unable to dismiss modal router: base view controller should be presented modally")
+            return
+        }
+
+        router.removeFromParent()
+        baseViewController.dismiss(animated: animated, completion: completion)
+    }
+    
     open var shouldAutomaticallyDismissModalController: Bool {
         return true
     }
@@ -71,7 +93,7 @@ open class Router: NSObject, RouterInterface {
         closeCurrentView(animated: true, completion: nil)
     }
 
-    open func closeCurrentView(animated: Bool, completion: (()->())?) {
+    open func closeCurrentView(animated: Bool, completion: (()->Void)?) {
         if shouldAutomaticallyDismissModalController && hasPresentedViewController {
             baseViewController.dismiss(animated: animated, completion: completion)
         } else {
