@@ -10,7 +10,6 @@ import ViperBase
 
 final class UserWelcomePresenter: Presenter {
     init(router: ProfileRouterInterface) {
-        // TODO: Implement
         super.init(router: router)
     }
 }

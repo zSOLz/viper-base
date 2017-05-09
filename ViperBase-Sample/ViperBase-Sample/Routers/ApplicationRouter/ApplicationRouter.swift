@@ -28,6 +28,8 @@ final class ApplicationRouter: TabRouter {
                                             profileRouter.baseViewController]
         addChild(router: newsFeedRouter)
         addChild(router: profileRouter)
+        
+        selectViewController(withRouterType: NewsFeedRouter.self)
     }
 }
 

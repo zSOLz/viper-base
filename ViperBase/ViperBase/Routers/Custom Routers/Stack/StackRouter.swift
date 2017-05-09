@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class StackRouter: Router, StackRouterInterface {
+open class StackRouter: Router, StackRouterInterface, UINavigationControllerDelegate {
     // TODO: Should we use UINavigationController instead of PresentableNavigationController
     fileprivate var innerNavigationController: PresentableNavigationController?
     open var navigationController: PresentableNavigationController {
@@ -18,6 +18,7 @@ open class StackRouter: Router, StackRouterInterface {
             }
 
             loadNavigationController()
+            navigationController.delegate = self
             
             guard let controller = innerNavigationController else {
                 fatalError("ViperBase.StackRouter.navigationController\n" +
@@ -50,18 +51,36 @@ open class StackRouter: Router, StackRouterInterface {
         navigationController = PresentableNavigationController()
     }
     
-    open func containsViewController<ControllerType: UIViewController>(withType _: ControllerType) -> Bool {
-        return navigationController.viewControllers.contains { $0 is ControllerType }
+    open func lastViewController<ControllerType: UIViewController>(withType _: ControllerType.Type) -> UIViewController? {
+        return navigationController.viewControllers.reversed().first { $0 is ControllerType }
+    }
+
+    open func containsViewController<ControllerType: UIViewController>(withType _: ControllerType.Type) -> Bool {
+        return (lastViewController(withType: ControllerType.self) != nil)
     }
     
-    open func popToFirstViewController<ControllerType: UIViewController>(withType _: ControllerType, animated: Bool) -> [UIViewController] {
-        for controller in navigationController.viewControllers.reversed() {
-            if controller is ControllerType {
-                return navigationController.popToViewController(controller, animated: animated) ?? []
+    @discardableResult open func popToFirstViewController<ControllerType: UIViewController>(withType _: ControllerType.Type, animated: Bool) -> [UIViewController] {
+        guard let lastViewController = lastViewController(withType: ControllerType.self) else {
+            return []
+        }
+        return navigationController.popToViewController(lastViewController, animated: animated) ?? []
+    }
+    
+    open var shouldAutomaticallyRemoveUnusedChildRouters: Bool {
+        return true
+    }
+    
+    // MARK: - UINavigationControllerDelegate
+    
+    open func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        guard shouldAutomaticallyRemoveUnusedChildRouters else {
+            return
+        }
+        for router in childRouters {
+            if !navigationController.childViewControllers.contains(router.baseViewController) &&
+                navigationController.presentedViewController != router.baseViewController {
+                router.removeFromParent()
             }
         }
-        return []
     }
-    
-    // TODO: Implement child navigations automatic removal
 }

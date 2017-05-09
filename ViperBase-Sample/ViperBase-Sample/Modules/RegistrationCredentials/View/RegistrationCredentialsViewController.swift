@@ -68,6 +68,7 @@ extension RegistrationCredentialsViewController: RegistrationCredentialsViewInte
                 self?.activityIndicatorView.removeFromSuperview()
             })
         }
+        navigationController?.setNavigationBarHidden(visible, animated: true)
     }
     
     func stopEditing() {

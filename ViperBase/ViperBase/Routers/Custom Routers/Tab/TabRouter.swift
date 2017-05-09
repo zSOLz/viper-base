@@ -42,22 +42,35 @@ open class TabRouter: Router, StackRouterInterface {
         tabBarController = PresentableTabBarController()
     }
     
-    open func containsViewController<ControllerType: UIViewController>(withType _: ControllerType) -> Bool {
-        guard let viewControllers = tabBarController.viewControllers else {
-            return false
-        }
-        return viewControllers.contains { $0 is ControllerType }
+    open func viewController<ControllerType: UIViewController>(withType _: ControllerType.Type) -> UIViewController? {
+        return tabBarController.viewControllers?.first { $0 is ControllerType }
     }
     
-    open func selectViewController<ControllerType: UIViewController>(withType _: ControllerType, animated: Bool) {
-        guard let viewControllers = tabBarController.viewControllers else {
+    open func containsViewController<ControllerType: UIViewController>(withType _: ControllerType.Type) -> Bool {
+        return (viewController(withType: ControllerType.self) != nil)
+    }
+    
+    open func selectViewController<ControllerType: UIViewController>(withType _: ControllerType.Type) {
+        guard let viewController = viewController(withType: ControllerType.self) else {
             return
         }
 
-        for controller in viewControllers {
-            if controller is ControllerType {
-                tabBarController.selectedViewController = controller
-            }
+        tabBarController.selectedViewController = viewController
+    }
+    
+    open func selectViewController<RouterType: Router>(withRouterType _: RouterType.Type) {
+        guard let router = childRouters.first(where: { $0 is RouterType }) else {
+            assertionFailure("ViperBase.TabRouter.selectViewController(withRouterType:)\n" +
+                "Could not find router with required type")
+            return
         }
+        
+        guard (tabBarController.viewControllers?.contains(router.baseViewController) ?? false) else {
+            assertionFailure("ViperBase.TabRouter.selectViewController(withRouterType:)\n" +
+                "Tab bar controller does not contain router's base view controller")
+            return
+        }
+
+        tabBarController.selectedViewController = router.baseViewController
     }
 }
