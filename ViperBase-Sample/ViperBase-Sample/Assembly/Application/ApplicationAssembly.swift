@@ -8,7 +8,7 @@
 
 import ViperBase
 
-final class ApplicationAssembly: NSObject {
+final class ApplicationAssembly: Assembly {
     /// One instance of this router will be assigned to all presenters inside current module.
     /// 'Weak' specifier was used to break retain cycle: View > Presenter > Router > View.
     fileprivate weak var innerApplicationRouter: ApplicationRouter?
@@ -22,15 +22,15 @@ final class ApplicationAssembly: NSObject {
             return router
         }
     }
-    
-    func newsFeedAssembly() -> NewsFeedAssembly {
-        return NewsFeedAssembly()
-    }
 }
 
 // MARK: - ApplicationAssemblyInterface
 extension ApplicationAssembly: ApplicationAssemblyInterface {
     func newsFeedRouter() -> NewsFeedRouter {
-        return newsFeedAssembly().newsFeedRouter()
+        return NewsFeedAssembly().newsFeedRouter()
+    }
+    
+    func profileRouter() -> ProfileRouter {
+        return ProfileAssembly().profileRouter()
     }
 }

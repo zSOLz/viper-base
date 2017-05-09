@@ -8,6 +8,7 @@
 
 import ViperBase
 
-protocol ApplicationAssemblyInterface {
+protocol ApplicationAssemblyInterface: AssemblyInterface {
     func newsFeedRouter() -> NewsFeedRouter
+    func profileRouter() -> ProfileRouter
 }

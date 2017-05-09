@@ -13,4 +13,6 @@ protocol UserProfileInteractorInterface: InteractorInterface {
     
     var username: String { get }
     var email: String { get }
+    
+    func logoutUser()
 }

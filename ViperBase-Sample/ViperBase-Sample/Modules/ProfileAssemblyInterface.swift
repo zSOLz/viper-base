@@ -8,6 +8,8 @@
 
 import ViperBase
 
-protocol ProfileAssemblyInterface: NSObjectProtocol {
-    // Empty
+protocol ProfileAssemblyInterface: AssemblyInterface {
+    func userWlcomeViewController() -> UserWelcomeViewController
+    func userProfileViewController() -> UserProfileViewController
+    func registrationRouter() -> RegistrationRouter
 }

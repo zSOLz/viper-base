@@ -9,7 +9,7 @@
 import ViperBase
 
 protocol ProfileRouterInterface: RouterInterface {
-    func showUserAccountScreen()
-    func showUserUnautorizedScreen()
+    func showUserProfileScreen()
+    func showUserWelcomeScreen()
     func showRegistrationScreen()
 }

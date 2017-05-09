@@ -8,21 +8,50 @@
 
 import ViperBase
 
-final class ProfileRouter: ContainerRouter {
-
+final class ProfileRouter: StackRouter {
+    let profileAssembly: ProfileAssemblyInterface
+    
+    init(profileAssembly: ProfileAssemblyInterface) {
+        self.profileAssembly = profileAssembly
+    }
+    
+    override func loadNavigationController() {
+        super.loadNavigationController()
+        
+        showUserWelcomeScreen()
+    }
 }
 
 // MARK: - ProfileRouterInterface
-extension ProfileRouterInterface {
-    func showUserAccountScreen() {
-        
+extension ProfileRouter: ProfileRouterInterface {
+    func showUserProfileScreen() {
+        navigationController.viewControllers = [profileAssembly.userProfileViewController()]
     }
     
-    func showUserUnautorizedScreen() {
-        
+    func showUserWelcomeScreen() {
+        navigationController.viewControllers = [profileAssembly.userWlcomeViewController()]
     }
     
     func showRegistrationScreen() {
+        let registrationRouter = profileAssembly.registrationRouter()
         
+        registrationRouter.completionClosure = { [weak self, weak registrationRouter] in
+            self?.showUserProfileScreen()
+            self?.baseViewController.dismiss(animated: true)
+            
+            // Do not forget to remove child routers
+            registrationRouter?.removeFromParent()
+        }
+        
+        registrationRouter.cancelClosure = { [weak self, weak registrationRouter] in
+            self?.baseViewController.dismiss(animated: true)
+            
+            // Do not forget to remove child routers
+            registrationRouter?.removeFromParent()
+        }
+        
+        // Add router as child to keep strong reference
+        addChild(router: registrationRouter)
+        baseViewController.present(registrationRouter.baseViewController, animated: true)
     }
 }

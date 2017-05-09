@@ -23,6 +23,28 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bDF-5O-75o">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="9wU-Fy-DY3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8Z-s6-Agp">
+                                <rect key="frame" x="10" y="4" width="300" height="130"/>
+                                <string key="text">This sample shows how to pass data between master-details screens
+
+→Set breakpoint inside NewsFeedRouter.showArticleDetails(with:) method to understand how data and control flows goes.</string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="G8Z-s6-Agp" secondAttribute="trailing" constant="10" id="1Mh-vJ-kJl"/>
+                            <constraint firstItem="G8Z-s6-Agp" firstAttribute="leading" secondItem="9wU-Fy-DY3" secondAttribute="leading" constant="10" id="I5N-B0-BV4"/>
+                            <constraint firstAttribute="bottom" secondItem="G8Z-s6-Agp" secondAttribute="bottom" id="Rwp-kO-RSZ"/>
+                            <constraint firstItem="G8Z-s6-Agp" firstAttribute="top" secondItem="9wU-Fy-DY3" secondAttribute="top" constant="4" id="cig-dj-bYP"/>
+                        </constraints>
+                    </view>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="JdP-0x-5Yk"/>
                         <outlet property="delegate" destination="-1" id="VLl-mM-gYk"/>

@@ -162,7 +162,7 @@
 		FF919D761EB354900003A85C /* Routers */ = {
 			isa = PBXGroup;
 			children = (
-				FFA6DD381EB8F6BC003D7784 /* Custom */,
+				FFA6DD381EB8F6BC003D7784 /* Custom Routers */,
 				FF919DA31EB39BB10003A85C /* Router.swift */,
 				FF919DA11EB39B5F0003A85C /* RouterInterface.swift */,
 			);
@@ -222,14 +222,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		FFA6DD381EB8F6BC003D7784 /* Custom */ = {
+		FFA6DD381EB8F6BC003D7784 /* Custom Routers */ = {
 			isa = PBXGroup;
 			children = (
 				FFA6DD3C1EB8F7D8003D7784 /* Tab */,
 				FFA6DD391EB8F6E7003D7784 /* Container */,
 				FF919DA51EB3AA2E0003A85C /* Stack */,
 			);
-			path = Custom;
+			name = "Custom Routers";
+			path = "Custom Routers";
 			sourceTree = "<group>";
 		};
 		FFA6DD391EB8F6E7003D7784 /* Container */ = {

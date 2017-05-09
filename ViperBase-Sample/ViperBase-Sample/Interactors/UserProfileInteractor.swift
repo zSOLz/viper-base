@@ -29,4 +29,9 @@ extension UserProfileInteractor: UserProfileInteractorInterface {
     var email: String {
         return userDataSession.profile?.email ?? ""
     }
+    
+    func logoutUser() {
+        userDataSession.authenticationToken = nil
+        userDataSession.profile = nil
+    }
 }

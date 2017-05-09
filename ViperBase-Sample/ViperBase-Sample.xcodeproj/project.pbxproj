@@ -38,6 +38,32 @@
 		FF482EC81EBA8A7D004DEE00 /* ApplicationAssemblyInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF482EC61EBA8A7D004DEE00 /* ApplicationAssemblyInterface.swift */; };
 		FF482ECC1EBA8B06004DEE00 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF482ECA1EBA8B06004DEE00 /* ApplicationRouter.swift */; };
 		FF482ECD1EBA8B06004DEE00 /* ApplicationRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF482ECB1EBA8B06004DEE00 /* ApplicationRouterInterface.swift */; };
+		FF6C21FE1EC10DD5007A3820 /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C21FC1EC10DD5007A3820 /* RegistrationRouter.swift */; };
+		FF6C21FF1EC10DD5007A3820 /* RegistrationRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C21FD1EC10DD5007A3820 /* RegistrationRouterInterface.swift */; };
+		FF6C22061EC10EBA007A3820 /* RegistrationEmailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C22011EC10EBA007A3820 /* RegistrationEmailPresenter.swift */; };
+		FF6C22071EC10EBA007A3820 /* RegistrationEmailPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C22021EC10EBA007A3820 /* RegistrationEmailPresenterInterface.swift */; };
+		FF6C22081EC10EBA007A3820 /* RegistrationEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C22031EC10EBA007A3820 /* RegistrationEmailViewController.swift */; };
+		FF6C22091EC10EBA007A3820 /* RegistrationEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6C22041EC10EBA007A3820 /* RegistrationEmailViewController.xib */; };
+		FF6C220A1EC10EBA007A3820 /* RegistrationEmailViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C22051EC10EBA007A3820 /* RegistrationEmailViewInterface.swift */; };
+		FF6C22131EC1D489007A3820 /* RegistrationCredentialsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C220E1EC1D489007A3820 /* RegistrationCredentialsPresenter.swift */; };
+		FF6C22141EC1D489007A3820 /* RegistrationCredentialsPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C220F1EC1D489007A3820 /* RegistrationCredentialsPresenterInterface.swift */; };
+		FF6C22151EC1D489007A3820 /* RegistrationCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C22101EC1D489007A3820 /* RegistrationCredentialsViewController.swift */; };
+		FF6C22161EC1D489007A3820 /* RegistrationCredentialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6C22111EC1D489007A3820 /* RegistrationCredentialsViewController.xib */; };
+		FF6C22171EC1D489007A3820 /* RegistrationCredentialsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C22121EC1D489007A3820 /* RegistrationCredentialsViewInterface.swift */; };
+		FF6C22211EC1EC13007A3820 /* UserProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C221C1EC1EC13007A3820 /* UserProfilePresenter.swift */; };
+		FF6C22221EC1EC13007A3820 /* UserProfilePresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C221D1EC1EC13007A3820 /* UserProfilePresenterInterface.swift */; };
+		FF6C22231EC1EC13007A3820 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C221E1EC1EC13007A3820 /* UserProfileViewController.swift */; };
+		FF6C22241EC1EC13007A3820 /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6C221F1EC1EC13007A3820 /* UserProfileViewController.xib */; };
+		FF6C22251EC1EC13007A3820 /* UserProfileViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C22201EC1EC13007A3820 /* UserProfileViewInterface.swift */; };
+		FF6C222E1EC1F09A007A3820 /* UserWelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C22291EC1F09A007A3820 /* UserWelcomePresenter.swift */; };
+		FF6C222F1EC1F09A007A3820 /* UserWelcomePresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C222A1EC1F09A007A3820 /* UserWelcomePresenterInterface.swift */; };
+		FF6C22301EC1F09A007A3820 /* UserWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C222B1EC1F09A007A3820 /* UserWelcomeViewController.swift */; };
+		FF6C22311EC1F09A007A3820 /* UserWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6C222C1EC1F09A007A3820 /* UserWelcomeViewController.xib */; };
+		FF6C22321EC1F09A007A3820 /* UserWelcomeViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C222D1EC1F09A007A3820 /* UserWelcomeViewInterface.swift */; };
+		FF6C22391EC1F8DE007A3820 /* RegistrationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C22371EC1F8DE007A3820 /* RegistrationAssembly.swift */; };
+		FF6C223A1EC1F8DE007A3820 /* RegistrationAssemblyInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C22381EC1F8DE007A3820 /* RegistrationAssemblyInterface.swift */; };
+		FF6C223D1EC1F8F8007A3820 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C223B1EC1F8F8007A3820 /* Assembly.swift */; };
+		FF6C223E1EC1F8F8007A3820 /* AssemblyInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C223C1EC1F8F8007A3820 /* AssemblyInterface.swift */; };
 		FF7A12C51EBB80A1008632B8 /* NewsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7A12C41EBB80A1008632B8 /* NewsFeedViewController.xib */; };
 		FF7A12C81EBB8224008632B8 /* NewsFeedTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7A12C71EBB8224008632B8 /* NewsFeedTableCell.xib */; };
 		FF7A12CB1EBB8B25008632B8 /* UITableViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7A12CA1EBB8B25008632B8 /* UITableViewCell+Utils.swift */; };
@@ -50,8 +76,8 @@
 		FFF6F5F51EC075C7006E2FC9 /* UserDataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F5F41EC075C7006E2FC9 /* UserDataSession.swift */; };
 		FFF6F5F71EC075D0006E2FC9 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F5F61EC075D0006E2FC9 /* UserProfile.swift */; };
 		FFF6F5F91EC075DC006E2FC9 /* UserRegistrationDataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F5F81EC075DC006E2FC9 /* UserRegistrationDataSession.swift */; };
-		FFF6F5FE1EC07C56006E2FC9 /* UserRegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F5FC1EC07C56006E2FC9 /* UserRegistrationInteractor.swift */; };
-		FFF6F5FF1EC07C56006E2FC9 /* UserRegistrationInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F5FD1EC07C56006E2FC9 /* UserRegistrationInteractorInterface.swift */; };
+		FFF6F5FE1EC07C56006E2FC9 /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F5FC1EC07C56006E2FC9 /* RegistrationInteractor.swift */; };
+		FFF6F5FF1EC07C56006E2FC9 /* RegistrationInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F5FD1EC07C56006E2FC9 /* RegistrationInteractorInterface.swift */; };
 		FFF6F6021EC07C60006E2FC9 /* UserProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F6001EC07C60006E2FC9 /* UserProfileInteractor.swift */; };
 		FFF6F6031EC07C60006E2FC9 /* UserProfileInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F6011EC07C60006E2FC9 /* UserProfileInteractorInterface.swift */; };
 		FFF6F6071EC0BCB9006E2FC9 /* UserRegistrationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F6051EC0BCB9006E2FC9 /* UserRegistrationDataManager.swift */; };
@@ -106,6 +132,32 @@
 		FF482EC61EBA8A7D004DEE00 /* ApplicationAssemblyInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssemblyInterface.swift; sourceTree = "<group>"; };
 		FF482ECA1EBA8B06004DEE00 /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
 		FF482ECB1EBA8B06004DEE00 /* ApplicationRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouterInterface.swift; sourceTree = "<group>"; };
+		FF6C21FC1EC10DD5007A3820 /* RegistrationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		FF6C21FD1EC10DD5007A3820 /* RegistrationRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationRouterInterface.swift; sourceTree = "<group>"; };
+		FF6C22011EC10EBA007A3820 /* RegistrationEmailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationEmailPresenter.swift; sourceTree = "<group>"; };
+		FF6C22021EC10EBA007A3820 /* RegistrationEmailPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationEmailPresenterInterface.swift; sourceTree = "<group>"; };
+		FF6C22031EC10EBA007A3820 /* RegistrationEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationEmailViewController.swift; sourceTree = "<group>"; };
+		FF6C22041EC10EBA007A3820 /* RegistrationEmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationEmailViewController.xib; sourceTree = "<group>"; };
+		FF6C22051EC10EBA007A3820 /* RegistrationEmailViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationEmailViewInterface.swift; sourceTree = "<group>"; };
+		FF6C220E1EC1D489007A3820 /* RegistrationCredentialsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationCredentialsPresenter.swift; sourceTree = "<group>"; };
+		FF6C220F1EC1D489007A3820 /* RegistrationCredentialsPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationCredentialsPresenterInterface.swift; sourceTree = "<group>"; };
+		FF6C22101EC1D489007A3820 /* RegistrationCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationCredentialsViewController.swift; sourceTree = "<group>"; };
+		FF6C22111EC1D489007A3820 /* RegistrationCredentialsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationCredentialsViewController.xib; sourceTree = "<group>"; };
+		FF6C22121EC1D489007A3820 /* RegistrationCredentialsViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationCredentialsViewInterface.swift; sourceTree = "<group>"; };
+		FF6C221C1EC1EC13007A3820 /* UserProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfilePresenter.swift; sourceTree = "<group>"; };
+		FF6C221D1EC1EC13007A3820 /* UserProfilePresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfilePresenterInterface.swift; sourceTree = "<group>"; };
+		FF6C221E1EC1EC13007A3820 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		FF6C221F1EC1EC13007A3820 /* UserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		FF6C22201EC1EC13007A3820 /* UserProfileViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewInterface.swift; sourceTree = "<group>"; };
+		FF6C22291EC1F09A007A3820 /* UserWelcomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWelcomePresenter.swift; sourceTree = "<group>"; };
+		FF6C222A1EC1F09A007A3820 /* UserWelcomePresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWelcomePresenterInterface.swift; sourceTree = "<group>"; };
+		FF6C222B1EC1F09A007A3820 /* UserWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWelcomeViewController.swift; sourceTree = "<group>"; };
+		FF6C222C1EC1F09A007A3820 /* UserWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserWelcomeViewController.xib; sourceTree = "<group>"; };
+		FF6C222D1EC1F09A007A3820 /* UserWelcomeViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWelcomeViewInterface.swift; sourceTree = "<group>"; };
+		FF6C22371EC1F8DE007A3820 /* RegistrationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationAssembly.swift; sourceTree = "<group>"; };
+		FF6C22381EC1F8DE007A3820 /* RegistrationAssemblyInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationAssemblyInterface.swift; sourceTree = "<group>"; };
+		FF6C223B1EC1F8F8007A3820 /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		FF6C223C1EC1F8F8007A3820 /* AssemblyInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyInterface.swift; sourceTree = "<group>"; };
 		FF7A12C41EBB80A1008632B8 /* NewsFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedViewController.xib; sourceTree = "<group>"; };
 		FF7A12C71EBB8224008632B8 /* NewsFeedTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedTableCell.xib; sourceTree = "<group>"; };
 		FF7A12CA1EBB8B25008632B8 /* UITableViewCell+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Utils.swift"; sourceTree = "<group>"; };
@@ -118,8 +170,8 @@
 		FFF6F5F41EC075C7006E2FC9 /* UserDataSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataSession.swift; sourceTree = "<group>"; };
 		FFF6F5F61EC075D0006E2FC9 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		FFF6F5F81EC075DC006E2FC9 /* UserRegistrationDataSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationDataSession.swift; sourceTree = "<group>"; };
-		FFF6F5FC1EC07C56006E2FC9 /* UserRegistrationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationInteractor.swift; sourceTree = "<group>"; };
-		FFF6F5FD1EC07C56006E2FC9 /* UserRegistrationInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationInteractorInterface.swift; sourceTree = "<group>"; };
+		FFF6F5FC1EC07C56006E2FC9 /* RegistrationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
+		FFF6F5FD1EC07C56006E2FC9 /* RegistrationInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationInteractorInterface.swift; sourceTree = "<group>"; };
 		FFF6F6001EC07C60006E2FC9 /* UserProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileInteractor.swift; sourceTree = "<group>"; };
 		FFF6F6011EC07C60006E2FC9 /* UserProfileInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileInteractorInterface.swift; sourceTree = "<group>"; };
 		FFF6F6051EC0BCB9006E2FC9 /* UserRegistrationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationDataManager.swift; sourceTree = "<group>"; };
@@ -184,6 +236,10 @@
 		FF482E721EB9F37A004DEE00 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FF6C22281EC1F067007A3820 /* UserWelcome */,
+				FF6C221B1EC1E713007A3820 /* UserProfile */,
+				FFC176FC1EC1087500392ECE /* RegistrationCredentials */,
+				FFC176F81EC1083200392ECE /* RegistrationEmail */,
 				FF482E981EBA03DF004DEE00 /* ArticleDetails */,
 				FF482E971EBA03D5004DEE00 /* NewsFeed */,
 			);
@@ -193,9 +249,10 @@
 		FF482E731EB9F382004DEE00 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
-				FFF6F5EA1EC07409006E2FC9 /* ProfileRouter */,
 				FF482EC91EBA8AF1004DEE00 /* ApplicationRouter */,
 				FF482E7A1EB9F58B004DEE00 /* NewsFeed */,
+				FF6C22001EC10DDD007A3820 /* Profile */,
+				FFF6F5EA1EC07409006E2FC9 /* Registration */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -203,10 +260,13 @@
 		FF482E741EB9F3A3004DEE00 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				FF482E7B1EB9F592004DEE00 /* ProfileAssembly */,
-				FF482EBA1EBA27B7004DEE00 /* NewsFeed */,
+				FF6C223B1EC1F8F8007A3820 /* Assembly.swift */,
+				FF6C223C1EC1F8F8007A3820 /* AssemblyInterface.swift */,
+				FF6C22421EC1FE8F007A3820 /* Builders */,
 				FF482E791EB9F57E004DEE00 /* Application */,
-				FF482EA81EBA082E004DEE00 /* ArticleDetailsInteractorBuilder.swift */,
+				FF482EBA1EBA27B7004DEE00 /* NewsFeed */,
+				FF482E7B1EB9F592004DEE00 /* ProfileAssembly */,
+				FF6C22361EC1F8CA007A3820 /* RegistrationAssembly */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -224,7 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				FFF6F5FB1EC07C2E006E2FC9 /* UserProfileInteractor */,
-				FFF6F5FA1EC07C26006E2FC9 /* AuthenticationInteractor */,
+				FFF6F5FA1EC07C26006E2FC9 /* RegistrationInteractor */,
 				FF482EA31EBA06BD004DEE00 /* ArticleDetailsInteractor */,
 				FF482E8A1EB9FF8F004DEE00 /* NewsFeedInteractor */,
 			);
@@ -389,6 +449,126 @@
 			path = ApplicationRouter;
 			sourceTree = "<group>";
 		};
+		FF6C22001EC10DDD007A3820 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FFF6F5EF1EC07454006E2FC9 /* ProfileRouter.swift */,
+				FFF6F5F01EC07454006E2FC9 /* ProfileRouterInterface.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		FF6C220C1EC10F06007A3820 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C22031EC10EBA007A3820 /* RegistrationEmailViewController.swift */,
+				FF6C22041EC10EBA007A3820 /* RegistrationEmailViewController.xib */,
+				FF6C22051EC10EBA007A3820 /* RegistrationEmailViewInterface.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF6C220D1EC10F0C007A3820 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C22011EC10EBA007A3820 /* RegistrationEmailPresenter.swift */,
+				FF6C22021EC10EBA007A3820 /* RegistrationEmailPresenterInterface.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		FF6C22191EC1D4CE007A3820 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C22101EC1D489007A3820 /* RegistrationCredentialsViewController.swift */,
+				FF6C22111EC1D489007A3820 /* RegistrationCredentialsViewController.xib */,
+				FF6C22121EC1D489007A3820 /* RegistrationCredentialsViewInterface.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF6C221A1EC1D4D4007A3820 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C220E1EC1D489007A3820 /* RegistrationCredentialsPresenter.swift */,
+				FF6C220F1EC1D489007A3820 /* RegistrationCredentialsPresenterInterface.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		FF6C221B1EC1E713007A3820 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C22271EC1EC25007A3820 /* Presenter */,
+				FF6C22261EC1EC20007A3820 /* View */,
+			);
+			name = UserProfile;
+			sourceTree = "<group>";
+		};
+		FF6C22261EC1EC20007A3820 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C221E1EC1EC13007A3820 /* UserProfileViewController.swift */,
+				FF6C221F1EC1EC13007A3820 /* UserProfileViewController.xib */,
+				FF6C22201EC1EC13007A3820 /* UserProfileViewInterface.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF6C22271EC1EC25007A3820 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C221C1EC1EC13007A3820 /* UserProfilePresenter.swift */,
+				FF6C221D1EC1EC13007A3820 /* UserProfilePresenterInterface.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		FF6C22281EC1F067007A3820 /* UserWelcome */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C22351EC1F116007A3820 /* Presenter */,
+				FF6C22341EC1F110007A3820 /* View */,
+			);
+			name = UserWelcome;
+			sourceTree = "<group>";
+		};
+		FF6C22341EC1F110007A3820 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C222B1EC1F09A007A3820 /* UserWelcomeViewController.swift */,
+				FF6C222C1EC1F09A007A3820 /* UserWelcomeViewController.xib */,
+				FF6C222D1EC1F09A007A3820 /* UserWelcomeViewInterface.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF6C22351EC1F116007A3820 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C22291EC1F09A007A3820 /* UserWelcomePresenter.swift */,
+				FF6C222A1EC1F09A007A3820 /* UserWelcomePresenterInterface.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		FF6C22361EC1F8CA007A3820 /* RegistrationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C22371EC1F8DE007A3820 /* RegistrationAssembly.swift */,
+				FF6C22381EC1F8DE007A3820 /* RegistrationAssemblyInterface.swift */,
+			);
+			name = RegistrationAssembly;
+			sourceTree = "<group>";
+		};
+		FF6C22421EC1FE8F007A3820 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				FF482EA81EBA082E004DEE00 /* ArticleDetailsInteractorBuilder.swift */,
+			);
+			name = Builders;
+			sourceTree = "<group>";
+		};
 		FF7A12C61EBB8215008632B8 /* NewsFeedTableCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,13 +594,31 @@
 			name = Errors;
 			sourceTree = "<group>";
 		};
-		FFF6F5EA1EC07409006E2FC9 /* ProfileRouter */ = {
+		FFC176F81EC1083200392ECE /* RegistrationEmail */ = {
 			isa = PBXGroup;
 			children = (
-				FFF6F5EF1EC07454006E2FC9 /* ProfileRouter.swift */,
-				FFF6F5F01EC07454006E2FC9 /* ProfileRouterInterface.swift */,
+				FF6C220D1EC10F0C007A3820 /* Presenter */,
+				FF6C220C1EC10F06007A3820 /* View */,
 			);
-			name = ProfileRouter;
+			name = RegistrationEmail;
+			sourceTree = "<group>";
+		};
+		FFC176FC1EC1087500392ECE /* RegistrationCredentials */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C221A1EC1D4D4007A3820 /* Presenter */,
+				FF6C22191EC1D4CE007A3820 /* View */,
+			);
+			name = RegistrationCredentials;
+			sourceTree = "<group>";
+		};
+		FFF6F5EA1EC07409006E2FC9 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C21FC1EC10DD5007A3820 /* RegistrationRouter.swift */,
+				FF6C21FD1EC10DD5007A3820 /* RegistrationRouterInterface.swift */,
+			);
+			name = Registration;
 			sourceTree = "<group>";
 		};
 		FFF6F5F31EC075AC006E2FC9 /* User */ = {
@@ -434,13 +632,13 @@
 			name = User;
 			sourceTree = "<group>";
 		};
-		FFF6F5FA1EC07C26006E2FC9 /* AuthenticationInteractor */ = {
+		FFF6F5FA1EC07C26006E2FC9 /* RegistrationInteractor */ = {
 			isa = PBXGroup;
 			children = (
-				FFF6F5FC1EC07C56006E2FC9 /* UserRegistrationInteractor.swift */,
-				FFF6F5FD1EC07C56006E2FC9 /* UserRegistrationInteractorInterface.swift */,
+				FFF6F5FC1EC07C56006E2FC9 /* RegistrationInteractor.swift */,
+				FFF6F5FD1EC07C56006E2FC9 /* RegistrationInteractorInterface.swift */,
 			);
-			name = AuthenticationInteractor;
+			name = RegistrationInteractor;
 			sourceTree = "<group>";
 		};
 		FFF6F5FB1EC07C2E006E2FC9 /* UserProfileInteractor */ = {
@@ -522,11 +720,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6C22161EC1D489007A3820 /* RegistrationCredentialsViewController.xib in Resources */,
 				FF482E581EB9F296004DEE00 /* LaunchScreen.storyboard in Resources */,
 				FF482E551EB9F296004DEE00 /* Assets.xcassets in Resources */,
+				FF6C22091EC10EBA007A3820 /* RegistrationEmailViewController.xib in Resources */,
 				FF7A12C51EBB80A1008632B8 /* NewsFeedViewController.xib in Resources */,
+				FF6C22241EC1EC13007A3820 /* UserProfileViewController.xib in Resources */,
 				FF8113F31EBBBD6900A1B77E /* ArticleDetailsViewController.xib in Resources */,
 				FF7A12C81EBB8224008632B8 /* NewsFeedTableCell.xib in Resources */,
+				FF6C22311EC1F09A007A3820 /* UserWelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,23 +739,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6C21FF1EC10DD5007A3820 /* RegistrationRouterInterface.swift in Sources */,
 				FF482EBE1EBA27DC004DEE00 /* NewsFeedAssemblyInterface.swift in Sources */,
+				FF6C22171EC1D489007A3820 /* RegistrationCredentialsViewInterface.swift in Sources */,
+				FF6C22081EC10EBA007A3820 /* RegistrationEmailViewController.swift in Sources */,
 				FFC176F71EC0C28800392ECE /* ApplicationError.swift in Sources */,
 				FF482EAC1EBA15CF004DEE00 /* NewsFeedRouter.swift in Sources */,
 				FF482EA21EBA044A004DEE00 /* NewsFeedViewInterface.swift in Sources */,
 				FFF6F5F11EC07454006E2FC9 /* ProfileRouter.swift in Sources */,
 				FFF6F6031EC07C60006E2FC9 /* UserProfileInteractorInterface.swift in Sources */,
+				FF6C223A1EC1F8DE007A3820 /* RegistrationAssemblyInterface.swift in Sources */,
+				FF6C22231EC1EC13007A3820 /* UserProfileViewController.swift in Sources */,
 				FF482ECC1EBA8B06004DEE00 /* ApplicationRouter.swift in Sources */,
 				FF482E7D1EB9F5DD004DEE00 /* NewsFeedDataSession.swift in Sources */,
 				FF482ECD1EBA8B06004DEE00 /* ApplicationRouterInterface.swift in Sources */,
+				FF6C22141EC1D489007A3820 /* RegistrationCredentialsPresenterInterface.swift in Sources */,
 				FF482EBD1EBA27DC004DEE00 /* NewsFeedAssembly.swift in Sources */,
+				FF6C22251EC1EC13007A3820 /* UserProfileViewInterface.swift in Sources */,
 				FF482E921EBA00F0004DEE00 /* NewsFeedInteractorInterface.swift in Sources */,
 				FF482E9B1EBA0412004DEE00 /* NewsFeedPresenter.swift in Sources */,
 				FF482E9C1EBA0412004DEE00 /* NewsFeedPresenterInterface.swift in Sources */,
 				FF482EA61EBA06DB004DEE00 /* ArticleDetailsInteractor.swift in Sources */,
+				FF6C22131EC1D489007A3820 /* RegistrationCredentialsPresenter.swift in Sources */,
+				FF6C22071EC10EBA007A3820 /* RegistrationEmailPresenterInterface.swift in Sources */,
 				FF482E4E1EB9F296004DEE00 /* AppDelegate.swift in Sources */,
 				FF482EC41EBA474A004DEE00 /* NewsFeedTableCell.swift in Sources */,
+				FF6C22221EC1EC13007A3820 /* UserProfilePresenterInterface.swift in Sources */,
 				FF482EC81EBA8A7D004DEE00 /* ApplicationAssemblyInterface.swift in Sources */,
+				FF6C22151EC1D489007A3820 /* RegistrationCredentialsViewController.swift in Sources */,
 				FF482EA11EBA044A004DEE00 /* NewsFeedViewController.swift in Sources */,
 				FFF6F5F71EC075D0006E2FC9 /* UserProfile.swift in Sources */,
 				FFF6F5EE1EC07444006E2FC9 /* ProfileAssemblyInterface.swift in Sources */,
@@ -561,25 +774,36 @@
 				FF482E961EBA018A004DEE00 /* NewsFeedDataManagerInterface.swift in Sources */,
 				FFF6F5F91EC075DC006E2FC9 /* UserRegistrationDataSession.swift in Sources */,
 				FF482EA71EBA06DB004DEE00 /* ArticleDetailsInteractorInterface.swift in Sources */,
+				FF6C22211EC1EC13007A3820 /* UserProfilePresenter.swift in Sources */,
 				FF482EB21EBA160A004DEE00 /* ArticleDetailsPresenter.swift in Sources */,
 				FFF6F6021EC07C60006E2FC9 /* UserProfileInteractor.swift in Sources */,
 				FFF6F60A1EC0BDB5006E2FC9 /* UserRegistrationInfo.swift in Sources */,
 				FF482EB31EBA160A004DEE00 /* ArticleDetailsPresenterInterface.swift in Sources */,
 				FFF6F6071EC0BCB9006E2FC9 /* UserRegistrationDataManager.swift in Sources */,
-				FFF6F5FE1EC07C56006E2FC9 /* UserRegistrationInteractor.swift in Sources */,
+				FF6C223D1EC1F8F8007A3820 /* Assembly.swift in Sources */,
+				FFF6F5FE1EC07C56006E2FC9 /* RegistrationInteractor.swift in Sources */,
 				FF482EC71EBA8A7D004DEE00 /* ApplicationAssembly.swift in Sources */,
+				FF6C22061EC10EBA007A3820 /* RegistrationEmailPresenter.swift in Sources */,
 				FFF6F6081EC0BCB9006E2FC9 /* UserRegistrationDataManagerInterface.swift in Sources */,
 				FF482EB71EBA1677004DEE00 /* ArticleDetailsViewInterface.swift in Sources */,
 				FF482EB61EBA1677004DEE00 /* ArticleDetailsViewController.swift in Sources */,
 				FF482E951EBA018A004DEE00 /* NewsFeedDataManager.swift in Sources */,
 				FFF6F5F21EC07454006E2FC9 /* ProfileRouterInterface.swift in Sources */,
+				FF6C22391EC1F8DE007A3820 /* RegistrationAssembly.swift in Sources */,
 				FF482E911EBA00F0004DEE00 /* NewsFeedInteractor.swift in Sources */,
-				FFF6F5FF1EC07C56006E2FC9 /* UserRegistrationInteractorInterface.swift in Sources */,
+				FFF6F5FF1EC07C56006E2FC9 /* RegistrationInteractorInterface.swift in Sources */,
+				FF6C222E1EC1F09A007A3820 /* UserWelcomePresenter.swift in Sources */,
 				FF482EA91EBA082E004DEE00 /* ArticleDetailsInteractorBuilder.swift in Sources */,
+				FF6C222F1EC1F09A007A3820 /* UserWelcomePresenterInterface.swift in Sources */,
+				FF6C220A1EC10EBA007A3820 /* RegistrationEmailViewInterface.swift in Sources */,
 				FFF6F5F51EC075C7006E2FC9 /* UserDataSession.swift in Sources */,
 				FF482EAD1EBA15CF004DEE00 /* NewsFeedRouterInterface.swift in Sources */,
+				FF6C22301EC1F09A007A3820 /* UserWelcomeViewController.swift in Sources */,
 				FFF6F5ED1EC07444006E2FC9 /* ProfileAssembly.swift in Sources */,
+				FF6C223E1EC1F8F8007A3820 /* AssemblyInterface.swift in Sources */,
 				FF482E8E1EB9FFB9004DEE00 /* NewsFeedArticle.swift in Sources */,
+				FF6C22321EC1F09A007A3820 /* UserWelcomeViewInterface.swift in Sources */,
+				FF6C21FE1EC10DD5007A3820 /* RegistrationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +925,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SOL.ViperBase-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -714,6 +939,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SOL.ViperBase-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

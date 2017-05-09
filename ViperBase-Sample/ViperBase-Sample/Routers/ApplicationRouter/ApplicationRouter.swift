@@ -21,13 +21,13 @@ final class ApplicationRouter: TabRouter {
         let newsFeedRouter = applicationAssembly.newsFeedRouter()
         newsFeedRouter.baseViewController.tabBarItem.title = "News"
         
-        let accountViewController = UIViewController()
-        accountViewController.view.backgroundColor = UIColor.white
-        accountViewController.tabBarItem.title = "Account"
+        let profileRouter = applicationAssembly.profileRouter()
+        profileRouter.baseViewController.tabBarItem.title = "Profile"
         
         tabBarController.viewControllers = [newsFeedRouter.baseViewController,
-                                            accountViewController]
+                                            profileRouter.baseViewController]
         addChild(router: newsFeedRouter)
+        addChild(router: profileRouter)
     }
 }
 

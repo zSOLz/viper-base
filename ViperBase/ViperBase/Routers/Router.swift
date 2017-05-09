@@ -18,7 +18,7 @@ open class Router: NSObject, RouterInterface {
     }
     
     open var activeViewController: UIViewController? {
-        fatalError("ViperBase.Router.activeController\n" +
+        fatalError("ViperBase.Router.activeViewController\n" +
             "Abstract getter. Please override 'activeController' getter in child class")
     }
 
