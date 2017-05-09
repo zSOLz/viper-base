@@ -16,6 +16,15 @@ final class UserProfilePresenter: Presenter {
         
         super.init(router: router)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated: animated)
+        
+        let viewModel = UserProfileViewModel(username: userProfileInteractor.username ?? "",
+                                             email: userProfileInteractor.email ?? "",
+                                             token: userProfileInteractor.token ?? "")
+        view?.setup(viewModel: viewModel)
+    }
 }
 
 // MARK: - Fileprivate

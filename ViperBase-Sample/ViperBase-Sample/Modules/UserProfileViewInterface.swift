@@ -10,8 +10,8 @@ import ViperBase
 
 struct UserProfileViewModel {
     let username: String
-    let token: String
     let email: String
+    let token: String
 }
 
 protocol UserProfileViewInterface: ViewInterface {

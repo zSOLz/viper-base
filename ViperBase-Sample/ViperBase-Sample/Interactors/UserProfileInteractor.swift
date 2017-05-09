@@ -22,12 +22,16 @@ extension UserProfileInteractor: UserProfileInteractorInterface {
         return (userDataSession.profile != nil && userDataSession.authenticationToken != nil)
     }
     
-    var username: String {
-        return userDataSession.profile?.username ?? ""
+    var username: String? {
+        return userDataSession.profile?.username
     }
     
-    var email: String {
-        return userDataSession.profile?.email ?? ""
+    var email: String? {
+        return userDataSession.profile?.email
+    }
+    
+    var token: String? {
+        return userDataSession.authenticationToken
     }
     
     func logoutUser() {

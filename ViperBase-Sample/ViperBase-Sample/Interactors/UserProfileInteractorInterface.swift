@@ -11,8 +11,9 @@ import ViperBase
 protocol UserProfileInteractorInterface: InteractorInterface {
     var isUserAuthenticated: Bool { get }
     
-    var username: String { get }
-    var email: String { get }
+    var username: String? { get }
+    var email: String? { get }
+    var token: String? { get }
     
     func logoutUser()
 }
