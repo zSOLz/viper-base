@@ -18,12 +18,13 @@ open class StackRouter: Router, StackRouterInterface, UINavigationControllerDele
             }
 
             loadNavigationController()
-            navigationController.delegate = self
-            
             guard let controller = innerNavigationController else {
                 fatalError("ViperBase.StackRouter.navigationController\n" +
                     "'navigationController' variable should be initialized after 'loadNavigationController' method call.")
             }
+            
+            controller.delegate = self
+
             return controller
         }
         set {

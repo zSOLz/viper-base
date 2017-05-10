@@ -12,7 +12,12 @@ open class ContainerViewController: PresentableViewController {
 
     open var currentContainerView: UIView {
         if !isViewLoaded {
-            loadViewIfNeeded()
+            if #available(iOS 9.0, *) {
+                loadViewIfNeeded()
+            } else {
+                // Load view in 'brute' way
+                let _ = view
+            }
         }
         
         return containerView ?? view

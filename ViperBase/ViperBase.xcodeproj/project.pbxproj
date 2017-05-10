@@ -11,7 +11,6 @@
 		FF643B931EB3AD9800B067D4 /* StackRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643B921EB3AD9800B067D4 /* StackRouterInterface.swift */; };
 		FF643B951EB3AF1B00B067D4 /* ContainerRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643B941EB3AF1B00B067D4 /* ContainerRouterInterface.swift */; };
 		FF919D641EB353EA0003A85C /* ViperBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF919D5A1EB353EA0003A85C /* ViperBase.framework */; };
-		FF919D691EB353EA0003A85C /* ViperBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF919D681EB353EA0003A85C /* ViperBaseTests.swift */; };
 		FF919D6B1EB353EA0003A85C /* ViperBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FF919D5D1EB353EA0003A85C /* ViperBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF919D7C1EB356E60003A85C /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF919D7B1EB356E60003A85C /* ViewInterface.swift */; };
 		FF919D861EB357E50003A85C /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF919D7E1EB357E50003A85C /* ContainerViewController.swift */; };
@@ -28,6 +27,14 @@
 		FF919DA41EB39BB10003A85C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF919DA31EB39BB10003A85C /* Router.swift */; };
 		FF919DAD1EB3AA510003A85C /* ContainerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF919DA71EB3AA510003A85C /* ContainerRouter.swift */; };
 		FF919DB01EB3AA510003A85C /* StackRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF919DAA1EB3AA510003A85C /* StackRouter.swift */; };
+		FF9BFCF51EC34A9400131C61 /* PresenterSubclassMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFCF41EC34A9400131C61 /* PresenterSubclassMock.swift */; };
+		FF9BFCF61EC34E6500131C61 /* PresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFCC01EC3493C00131C61 /* PresenterTest.swift */; };
+		FF9BFCF71EC355B700131C61 /* PresentableViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFCDA1EC3493C00131C61 /* PresentableViewTest.swift */; };
+		FF9BFCF91EC3560C00131C61 /* PresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFCF81EC3560C00131C61 /* PresenterMock.swift */; };
+		FF9BFCFB1EC3604300131C61 /* PresentableViewSubclassMock.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9BFCFA1EC3604300131C61 /* PresentableViewSubclassMock.xib */; };
+		FF9BFCFC1EC3634A00131C61 /* PresentableControlTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFCD91EC3493C00131C61 /* PresentableControlTest.swift */; };
+		FF9BFCFE1EC3636000131C61 /* PresentableControlSubclassMock.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9BFCFD1EC3636000131C61 /* PresentableControlSubclassMock.xib */; };
+		FF9BFCFF1EC3659200131C61 /* PresentableViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFCD71EC3493C00131C61 /* PresentableViewControllerTest.swift */; };
 		FFA6DD351EB8EB4B003D7784 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6DD341EB8EB4B003D7784 /* ServiceManager.swift */; };
 		FFA6DD371EB8EC34003D7784 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6DD361EB8EC34003D7784 /* Service.swift */; };
 		FFA6DD3B1EB8F75A003D7784 /* PresentableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6DD3A1EB8F75A003D7784 /* PresentableNavigationController.swift */; };
@@ -53,7 +60,6 @@
 		FF919D5D1EB353EA0003A85C /* ViperBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViperBase.h; sourceTree = "<group>"; };
 		FF919D5E1EB353EA0003A85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF919D631EB353EA0003A85C /* ViperBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF919D681EB353EA0003A85C /* ViperBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperBaseTests.swift; sourceTree = "<group>"; };
 		FF919D6A1EB353EA0003A85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF919D7B1EB356E60003A85C /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
 		FF919D7E1EB357E50003A85C /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +76,14 @@
 		FF919DA31EB39BB10003A85C /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FF919DA71EB3AA510003A85C /* ContainerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerRouter.swift; sourceTree = "<group>"; };
 		FF919DAA1EB3AA510003A85C /* StackRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackRouter.swift; sourceTree = "<group>"; };
+		FF9BFCC01EC3493C00131C61 /* PresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterTest.swift; sourceTree = "<group>"; };
+		FF9BFCD71EC3493C00131C61 /* PresentableViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableViewControllerTest.swift; sourceTree = "<group>"; };
+		FF9BFCD91EC3493C00131C61 /* PresentableControlTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableControlTest.swift; sourceTree = "<group>"; };
+		FF9BFCDA1EC3493C00131C61 /* PresentableViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableViewTest.swift; sourceTree = "<group>"; };
+		FF9BFCF41EC34A9400131C61 /* PresenterSubclassMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresenterSubclassMock.swift; path = PresenterSubclassMock.swift; sourceTree = "<group>"; };
+		FF9BFCF81EC3560C00131C61 /* PresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterMock.swift; sourceTree = "<group>"; };
+		FF9BFCFA1EC3604300131C61 /* PresentableViewSubclassMock.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentableViewSubclassMock.xib; sourceTree = "<group>"; };
+		FF9BFCFD1EC3636000131C61 /* PresentableControlSubclassMock.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentableControlSubclassMock.xib; sourceTree = "<group>"; };
 		FFA6DD341EB8EB4B003D7784 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		FFA6DD361EB8EC34003D7784 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		FFA6DD3A1EB8F75A003D7784 /* PresentableNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableNavigationController.swift; sourceTree = "<group>"; };
@@ -119,8 +133,8 @@
 		FF919D5C1EB353EA0003A85C /* ViperBase */ = {
 			isa = PBXGroup;
 			children = (
-				FF919D751EB354870003A85C /* Interactors */,
-				FF919D771EB3549A0003A85C /* Presenters */,
+				FF919D751EB354870003A85C /* Interactor */,
+				FF919D771EB3549A0003A85C /* Presenter */,
 				FF919D761EB354900003A85C /* Routers */,
 				FF919D741EB3547D0003A85C /* Views */,
 				FFA6DD301EB8E08D003D7784 /* Services */,
@@ -134,7 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				FF919D6A1EB353EA0003A85C /* Info.plist */,
-				FF919D681EB353EA0003A85C /* ViperBaseTests.swift */,
+				FF9BFCF31EC34A3300131C61 /* Mocks */,
+				FF9BFCBF1EC3493C00131C61 /* Presenters */,
+				FF9BFCD51EC3493C00131C61 /* Views */,
 			);
 			path = ViperBaseTests;
 			sourceTree = "<group>";
@@ -150,13 +166,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		FF919D751EB354870003A85C /* Interactors */ = {
+		FF919D751EB354870003A85C /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				FF919D9A1EB393040003A85C /* Interactor.swift */,
 				FF919D9D1EB399150003A85C /* InteractorInterface.swift */,
 			);
-			path = Interactors;
+			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		FF919D761EB354900003A85C /* Routers */ = {
@@ -169,13 +186,14 @@
 			path = Routers;
 			sourceTree = "<group>";
 		};
-		FF919D771EB3549A0003A85C /* Presenters */ = {
+		FF919D771EB3549A0003A85C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				FF919D9F1EB3995C0003A85C /* Presenter.swift */,
 				FF919D8F1EB35A930003A85C /* PresenterInterface.swift */,
 			);
-			path = Presenters;
+			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		FF919D961EB385E00003A85C /* Frameworks */ = {
@@ -213,6 +231,52 @@
 			path = Stack;
 			sourceTree = "<group>";
 		};
+		FF9BFCBF1EC3493C00131C61 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BFCC01EC3493C00131C61 /* PresenterTest.swift */,
+				FF9BFCF41EC34A9400131C61 /* PresenterSubclassMock.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FF9BFCD51EC3493C00131C61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BFCD61EC3493C00131C61 /* BaseViewControllers */,
+				FF9BFCD81EC3493C00131C61 /* BaseViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF9BFCD61EC3493C00131C61 /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BFCD71EC3493C00131C61 /* PresentableViewControllerTest.swift */,
+			);
+			path = BaseViewControllers;
+			sourceTree = "<group>";
+		};
+		FF9BFCD81EC3493C00131C61 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BFCD91EC3493C00131C61 /* PresentableControlTest.swift */,
+				FF9BFCFD1EC3636000131C61 /* PresentableControlSubclassMock.xib */,
+				FF9BFCDA1EC3493C00131C61 /* PresentableViewTest.swift */,
+				FF9BFCFA1EC3604300131C61 /* PresentableViewSubclassMock.xib */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		FF9BFCF31EC34A3300131C61 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BFCF81EC3560C00131C61 /* PresenterMock.swift */,
+			);
+			name = Mocks;
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		FFA6DD301EB8E08D003D7784 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,7 +293,6 @@
 				FFA6DD391EB8F6E7003D7784 /* Container */,
 				FF919DA51EB3AA2E0003A85C /* Stack */,
 			);
-			name = "Custom Routers";
 			path = "Custom Routers";
 			sourceTree = "<group>";
 		};
@@ -356,6 +419,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9BFCFB1EC3604300131C61 /* PresentableViewSubclassMock.xib in Resources */,
+				FF9BFCFE1EC3636000131C61 /* PresentableControlSubclassMock.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +460,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF919D691EB353EA0003A85C /* ViperBaseTests.swift in Sources */,
+				FF9BFCFF1EC3659200131C61 /* PresentableViewControllerTest.swift in Sources */,
+				FF9BFCF91EC3560C00131C61 /* PresenterMock.swift in Sources */,
+				FF9BFCF71EC355B700131C61 /* PresentableViewTest.swift in Sources */,
+				FF9BFCFC1EC3634A00131C61 /* PresentableControlTest.swift in Sources */,
+				FF9BFCF51EC34A9400131C61 /* PresenterSubclassMock.swift in Sources */,
+				FF9BFCF61EC34E6500131C61 /* PresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -498,7 +568,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

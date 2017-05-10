@@ -11,6 +11,10 @@ import UIKit
 open class Presenter: NSObject, PresenterInterface {
     open weak var routerInterface: RouterInterface?
     
+    override public init() {
+        // Empty
+    }
+    
     public init(router: RouterInterface? = nil) {
         routerInterface = router
     }
@@ -21,7 +25,7 @@ open class Presenter: NSObject, PresenterInterface {
     
     // MARK: - PresenterInterface
     
-    open var viewInterface: ViewInterface? {
+    open weak var viewInterface: ViewInterface? {
         didSet {
             viewDidSetup()
         }
