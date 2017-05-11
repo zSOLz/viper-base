@@ -53,9 +53,9 @@ open class Router: NSObject, RouterInterface {
         self.parentRouter = nil
     }
     
-    open func presentModalRouter(_ router: Router, animated: Bool = true) {
+    open func presentModalRouter(_ router: Router, animated: Bool = true, completion: (()->Void)? = nil) {
         addChild(router: router)
-        baseViewController.present(router.baseViewController, animated: true, completion: nil)
+        baseViewController.present(router.baseViewController, animated: true, completion: completion)
     }
     
     open func dismissModalRouter(_ router: Router, animated: Bool = true, completion: (()->Void)? = nil) {
@@ -90,12 +90,14 @@ open class Router: NSObject, RouterInterface {
     }
     
     open func closeCurrentView(animated: Bool) {
-        closeCurrentView(animated: true, completion: nil)
+        closeCurrentView(animated: animated, completion: nil)
     }
 
     open func closeCurrentView(animated: Bool, completion: (()->Void)?) {
         if shouldAutomaticallyDismissModalController && hasPresentedViewController {
             baseViewController.dismiss(animated: animated, completion: completion)
+        } else if let parentRouter = parentRouter {
+            parentRouter.closeCurrentView(animated: animated, completion: completion)
         } else {
             completion?()
         }

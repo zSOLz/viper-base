@@ -1,5 +1,5 @@
 //
-//  PresentableViewControllerTest.swift
+//  PresentableNavigationControllerTest.swift
 //  ViperBaseTests
 //
 //  Created by SOL on 28.04.17.
@@ -9,8 +9,8 @@
 import XCTest
 @testable import ViperBase
 
-class PresentableViewControllerTest: XCTestCase {    
-    func testPresentableViewControllerLyfeCycle() {
+class PresentableNavigationControllerTest: XCTestCase {
+    func testPresentableNavigationControllerLyfeCycle() {
         var viewInterfaceCalledObject: ViewInterface!
         var viewDidLoadCalled = false
         var viewWillAppearCalled = false
@@ -27,7 +27,7 @@ class PresentableViewControllerTest: XCTestCase {
             viewDidLoadCalled = true
         }
         
-        let viewController = PresentableViewController()
+        let viewController = PresentableNavigationController()
         viewController.presenterInterface = presenterMock
         
         XCTAssertTrue(viewController === viewInterfaceCalledObject)
@@ -77,7 +77,7 @@ class PresentableViewControllerTest: XCTestCase {
         presenterMock.viewDidDisappearCallback = nil
     }
     
-    func testVisiblePresentableViewControllerLyfeCycle() {
+    func testVisiblePresentableNavigationControllerLyfeCycle() {
         var viewInterfaceCalledObject: ViewInterface!
         var viewDidLoadCalled = false
         var viewWillAppearCalled = false
@@ -102,7 +102,7 @@ class PresentableViewControllerTest: XCTestCase {
             XCTAssertFalse(animated)
         }
         
-        let viewController = PresentableViewController()
+        let viewController = PresentableNavigationController()
         let window = UIWindow()
         window.rootViewController = viewController
         window.addSubview(viewController.view)

@@ -1,6 +1,6 @@
 //
 //  PresenterTest.swift
-//  ViperBase
+//  ViperBaseTests
 //
 //  Created by SOL on 28.04.17.
 //  Copyright © 2017 SOL. All rights reserved.
@@ -14,7 +14,7 @@ fileprivate class ViewMock: NSObject, ViewInterface {
 }
 
 fileprivate class RouterMock: NSObject, RouterInterface {
-    func closeCurrentView(animated: Bool, completion: (()->())?) {}
+    func closeCurrentView(animated: Bool, completion: (()->Void)?) {}
     func closeCurrentView(animated: Bool) {}
     func closeCurrentView() {}
 }

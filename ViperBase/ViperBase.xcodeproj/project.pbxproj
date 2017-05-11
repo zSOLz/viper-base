@@ -10,6 +10,11 @@
 		FF24530C1EB903590017D32D /* PresentableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24530B1EB903590017D32D /* PresentableTabBarController.swift */; };
 		FF643B931EB3AD9800B067D4 /* StackRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643B921EB3AD9800B067D4 /* StackRouterInterface.swift */; };
 		FF643B951EB3AF1B00B067D4 /* ContainerRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643B941EB3AF1B00B067D4 /* ContainerRouterInterface.swift */; };
+		FF8B4D651EC49B7F0016504E /* PresentableTabBarControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFD0B1EC36D9900131C61 /* PresentableTabBarControllerTest.swift */; };
+		FF8B4D661EC49BF70016504E /* PresentableNavigationControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFD071EC36D9900131C61 /* PresentableNavigationControllerTest.swift */; };
+		FF8B4D671EC49E460016504E /* TabRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFD0C1EC36D9900131C61 /* TabRouterTest.swift */; };
+		FF8B4D6A1EC4AE8B0016504E /* StackRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFD081EC36D9900131C61 /* StackRouterTest.swift */; };
+		FF8B4D6B1EC4B7100016504E /* ContainerRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFD031EC36D9900131C61 /* ContainerRouterTest.swift */; };
 		FF919D641EB353EA0003A85C /* ViperBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF919D5A1EB353EA0003A85C /* ViperBase.framework */; };
 		FF919D6B1EB353EA0003A85C /* ViperBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FF919D5D1EB353EA0003A85C /* ViperBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF919D7C1EB356E60003A85C /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF919D7B1EB356E60003A85C /* ViewInterface.swift */; };
@@ -35,6 +40,8 @@
 		FF9BFCFC1EC3634A00131C61 /* PresentableControlTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFCD91EC3493C00131C61 /* PresentableControlTest.swift */; };
 		FF9BFCFE1EC3636000131C61 /* PresentableControlSubclassMock.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9BFCFD1EC3636000131C61 /* PresentableControlSubclassMock.xib */; };
 		FF9BFCFF1EC3659200131C61 /* PresentableViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFCD71EC3493C00131C61 /* PresentableViewControllerTest.swift */; };
+		FF9BFD1D1EC374A900131C61 /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFD0E1EC36D9900131C61 /* RouterTest.swift */; };
+		FF9BFD1E1EC374A900131C61 /* RouterSubclassMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BFD1B1EC3718500131C61 /* RouterSubclassMock.swift */; };
 		FFA6DD351EB8EB4B003D7784 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6DD341EB8EB4B003D7784 /* ServiceManager.swift */; };
 		FFA6DD371EB8EC34003D7784 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6DD361EB8EC34003D7784 /* Service.swift */; };
 		FFA6DD3B1EB8F75A003D7784 /* PresentableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6DD3A1EB8F75A003D7784 /* PresentableNavigationController.swift */; };
@@ -53,7 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FF24530B1EB903590017D32D /* PresentableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableTabBarController.swift; sourceTree = "<group>"; };
+		FF24530B1EB903590017D32D /* PresentableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentableTabBarController.swift; path = PresentableTabBarController.swift; sourceTree = "<group>"; };
 		FF643B921EB3AD9800B067D4 /* StackRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackRouterInterface.swift; sourceTree = "<group>"; };
 		FF643B941EB3AF1B00B067D4 /* ContainerRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerRouterInterface.swift; sourceTree = "<group>"; };
 		FF919D5A1EB353EA0003A85C /* ViperBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViperBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +69,7 @@
 		FF919D631EB353EA0003A85C /* ViperBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF919D6A1EB353EA0003A85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF919D7B1EB356E60003A85C /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
-		FF919D7E1EB357E50003A85C /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		FF919D7E1EB357E50003A85C /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerViewController.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		FF919D801EB357E50003A85C /* PresentableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableViewController.swift; sourceTree = "<group>"; };
 		FF919D841EB357E50003A85C /* PresentableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableView.swift; sourceTree = "<group>"; };
 		FF919D8F1EB35A930003A85C /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
@@ -84,9 +91,16 @@
 		FF9BFCF81EC3560C00131C61 /* PresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterMock.swift; sourceTree = "<group>"; };
 		FF9BFCFA1EC3604300131C61 /* PresentableViewSubclassMock.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentableViewSubclassMock.xib; sourceTree = "<group>"; };
 		FF9BFCFD1EC3636000131C61 /* PresentableControlSubclassMock.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentableControlSubclassMock.xib; sourceTree = "<group>"; };
+		FF9BFD031EC36D9900131C61 /* ContainerRouterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerRouterTest.swift; sourceTree = "<group>"; };
+		FF9BFD071EC36D9900131C61 /* PresentableNavigationControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentableNavigationControllerTest.swift; path = PresentableNavigationControllerTest.swift; sourceTree = "<group>"; };
+		FF9BFD081EC36D9900131C61 /* StackRouterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackRouterTest.swift; sourceTree = "<group>"; };
+		FF9BFD0B1EC36D9900131C61 /* PresentableTabBarControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentableTabBarControllerTest.swift; path = PresentableTabBarControllerTest.swift; sourceTree = "<group>"; };
+		FF9BFD0C1EC36D9900131C61 /* TabRouterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabRouterTest.swift; sourceTree = "<group>"; };
+		FF9BFD0E1EC36D9900131C61 /* RouterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
+		FF9BFD1B1EC3718500131C61 /* RouterSubclassMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouterSubclassMock.swift; path = RouterSubclassMock.swift; sourceTree = "<group>"; };
 		FFA6DD341EB8EB4B003D7784 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		FFA6DD361EB8EC34003D7784 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		FFA6DD3A1EB8F75A003D7784 /* PresentableNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableNavigationController.swift; sourceTree = "<group>"; };
+		FFA6DD3A1EB8F75A003D7784 /* PresentableNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentableNavigationController.swift; path = PresentableNavigationController.swift; sourceTree = "<group>"; };
 		FFA6DD3D1EB90299003D7784 /* TabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabRouter.swift; sourceTree = "<group>"; };
 		FFA6DD3F1EB902A5003D7784 /* TabRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabRouterInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +164,7 @@
 				FF919D6A1EB353EA0003A85C /* Info.plist */,
 				FF9BFCF31EC34A3300131C61 /* Mocks */,
 				FF9BFCBF1EC3493C00131C61 /* Presenters */,
+				FF9BFD001EC36D9900131C61 /* Routers */,
 				FF9BFCD51EC3493C00131C61 /* Views */,
 			);
 			path = ViperBaseTests;
@@ -172,7 +187,6 @@
 				FF919D9A1EB393040003A85C /* Interactor.swift */,
 				FF919D9D1EB399150003A85C /* InteractorInterface.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -192,7 +206,6 @@
 				FF919D9F1EB3995C0003A85C /* Presenter.swift */,
 				FF919D8F1EB35A930003A85C /* PresenterInterface.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -216,6 +229,9 @@
 		FF919D9C1EB393240003A85C /* BaseViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FF919D7E1EB357E50003A85C /* ContainerViewController.swift */,
+				FFA6DD3A1EB8F75A003D7784 /* PresentableNavigationController.swift */,
+				FF24530B1EB903590017D32D /* PresentableTabBarController.swift */,
 				FF919D801EB357E50003A85C /* PresentableViewController.swift */,
 			);
 			path = BaseViewControllers;
@@ -226,7 +242,6 @@
 			children = (
 				FF919DAA1EB3AA510003A85C /* StackRouter.swift */,
 				FF643B921EB3AD9800B067D4 /* StackRouterInterface.swift */,
-				FFA6DD3A1EB8F75A003D7784 /* PresentableNavigationController.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -235,7 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				FF9BFCC01EC3493C00131C61 /* PresenterTest.swift */,
-				FF9BFCF41EC34A9400131C61 /* PresenterSubclassMock.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -252,6 +266,8 @@
 		FF9BFCD61EC3493C00131C61 /* BaseViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FF9BFD071EC36D9900131C61 /* PresentableNavigationControllerTest.swift */,
+				FF9BFD0B1EC36D9900131C61 /* PresentableTabBarControllerTest.swift */,
 				FF9BFCD71EC3493C00131C61 /* PresentableViewControllerTest.swift */,
 			);
 			path = BaseViewControllers;
@@ -271,10 +287,54 @@
 		FF9BFCF31EC34A3300131C61 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				FF9BFCF41EC34A9400131C61 /* PresenterSubclassMock.swift */,
+				FF9BFD1B1EC3718500131C61 /* RouterSubclassMock.swift */,
 				FF9BFCF81EC3560C00131C61 /* PresenterMock.swift */,
 			);
-			name = Mocks;
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		FF9BFD001EC36D9900131C61 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BFD011EC36D9900131C61 /* Custom Routers */,
+				FF9BFD0E1EC36D9900131C61 /* RouterTest.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		FF9BFD011EC36D9900131C61 /* Custom Routers */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BFD021EC36D9900131C61 /* Container */,
+				FF9BFD061EC36D9900131C61 /* Stack */,
+				FF9BFD0A1EC36D9900131C61 /* Tab */,
+			);
+			path = "Custom Routers";
+			sourceTree = "<group>";
+		};
+		FF9BFD021EC36D9900131C61 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BFD031EC36D9900131C61 /* ContainerRouterTest.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		FF9BFD061EC36D9900131C61 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BFD081EC36D9900131C61 /* StackRouterTest.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		FF9BFD0A1EC36D9900131C61 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BFD0C1EC36D9900131C61 /* TabRouterTest.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 		FFA6DD301EB8E08D003D7784 /* Services */ = {
@@ -289,9 +349,9 @@
 		FFA6DD381EB8F6BC003D7784 /* Custom Routers */ = {
 			isa = PBXGroup;
 			children = (
-				FFA6DD3C1EB8F7D8003D7784 /* Tab */,
 				FFA6DD391EB8F6E7003D7784 /* Container */,
 				FF919DA51EB3AA2E0003A85C /* Stack */,
+				FFA6DD3C1EB8F7D8003D7784 /* Tab */,
 			);
 			path = "Custom Routers";
 			sourceTree = "<group>";
@@ -301,7 +361,6 @@
 			children = (
 				FF919DA71EB3AA510003A85C /* ContainerRouter.swift */,
 				FF643B941EB3AF1B00B067D4 /* ContainerRouterInterface.swift */,
-				FF919D7E1EB357E50003A85C /* ContainerViewController.swift */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -311,7 +370,6 @@
 			children = (
 				FFA6DD3D1EB90299003D7784 /* TabRouter.swift */,
 				FFA6DD3F1EB902A5003D7784 /* TabRouterInterface.swift */,
-				FF24530B1EB903590017D32D /* PresentableTabBarController.swift */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -462,9 +520,16 @@
 			files = (
 				FF9BFCFF1EC3659200131C61 /* PresentableViewControllerTest.swift in Sources */,
 				FF9BFCF91EC3560C00131C61 /* PresenterMock.swift in Sources */,
+				FF9BFD1D1EC374A900131C61 /* RouterTest.swift in Sources */,
+				FF8B4D661EC49BF70016504E /* PresentableNavigationControllerTest.swift in Sources */,
 				FF9BFCF71EC355B700131C61 /* PresentableViewTest.swift in Sources */,
+				FF8B4D6B1EC4B7100016504E /* ContainerRouterTest.swift in Sources */,
 				FF9BFCFC1EC3634A00131C61 /* PresentableControlTest.swift in Sources */,
+				FF8B4D671EC49E460016504E /* TabRouterTest.swift in Sources */,
+				FF8B4D6A1EC4AE8B0016504E /* StackRouterTest.swift in Sources */,
 				FF9BFCF51EC34A9400131C61 /* PresenterSubclassMock.swift in Sources */,
+				FF9BFD1E1EC374A900131C61 /* RouterSubclassMock.swift in Sources */,
+				FF8B4D651EC49B7F0016504E /* PresentableTabBarControllerTest.swift in Sources */,
 				FF9BFCF61EC34E6500131C61 /* PresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

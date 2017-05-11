@@ -40,11 +40,11 @@ open class StackRouter: Router, StackRouterInterface, UINavigationControllerDele
         return navigationController.topViewController
     }
     
-    override open func closeCurrentView(animated: Bool, completion: (()->())?) {
+    override open func closeCurrentView(animated: Bool, completion: (()->Void)?) {
         if hasPresentedViewController {
             super.closeCurrentView(animated: animated, completion: completion)
         } else {
-            navigationController.popViewController(animated: true)
+            navigationController.popViewController(animated: animated)
         }
     }
     

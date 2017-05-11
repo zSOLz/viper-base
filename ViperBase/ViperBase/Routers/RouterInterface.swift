@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol RouterInterface: NSObjectProtocol {
-    func closeCurrentView(animated: Bool, completion: (()->())?)
+    func closeCurrentView(animated: Bool, completion: (()->Void)?)
     func closeCurrentView(animated: Bool)
     func closeCurrentView()
 }

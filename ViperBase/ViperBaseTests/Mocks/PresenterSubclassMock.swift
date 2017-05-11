@@ -1,6 +1,6 @@
 //
 //  PresenterSubclassMock.swift
-//  ViperBase
+//  ViperBaseTests
 //
 //  Created by SOL on 10.05.17.
 //  Copyright © 2017 SOL. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import ViperBase
 
-final class PresenterSubclassMock: Presenter {
+class PresenterSubclassMock: Presenter {
     var viewDidSetupCallback: (()->Void)!
     var viewDidLoadCallback: (()->Void)!
     

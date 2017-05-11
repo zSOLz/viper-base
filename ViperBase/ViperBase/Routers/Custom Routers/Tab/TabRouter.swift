@@ -50,18 +50,20 @@ open class TabRouter: Router, StackRouterInterface {
         return (viewController(withType: ControllerType.self) != nil)
     }
     
-    open func selectViewController<ControllerType: UIViewController>(withType _: ControllerType.Type) {
+    open func selectViewController<ControllerType: UIViewController>(withType type: ControllerType.Type) {
         guard let viewController = viewController(withType: ControllerType.self) else {
+            assertionFailure("ViperBase.TabRouter.selectViewController(withRouterType:)\n" +
+                "Could not find view controller with type <\(type)>")
             return
         }
 
         tabBarController.selectedViewController = viewController
     }
     
-    open func selectViewController<RouterType: Router>(withRouterType _: RouterType.Type) {
+    open func selectViewController<RouterType: Router>(withRouterType type: RouterType.Type) {
         guard let router = childRouters.first(where: { $0 is RouterType }) else {
             assertionFailure("ViperBase.TabRouter.selectViewController(withRouterType:)\n" +
-                "Could not find router with required type")
+                "Could not find router with type <\(type)>")
             return
         }
         

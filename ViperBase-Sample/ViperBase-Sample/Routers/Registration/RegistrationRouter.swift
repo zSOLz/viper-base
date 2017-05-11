@@ -11,8 +11,8 @@ import ViperBase
 final class RegistrationRouter: StackRouter {
     fileprivate let registrationAssembly: RegistrationAssemblyInterface
     
-    var completionClosure: (()->())?
-    var cancelClosure: (()->())?
+    var completionClosure: (()->Void)?
+    var cancelClosure: (()->Void)?
     
     init(registrationAssembly: RegistrationAssemblyInterface) {
         self.registrationAssembly = registrationAssembly
