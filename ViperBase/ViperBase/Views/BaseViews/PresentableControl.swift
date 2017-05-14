@@ -40,20 +40,20 @@ open class PresentableControl: UIControl, ViewInterface, ContentContainerInterfa
         }
     }
     
-    override open func willMove(toSuperview newSuperview: UIView?) {
-        super.willMove(toSuperview: newSuperview)
+    override open func willMove(toWindow newWindow: UIWindow?) {
+        super.willMove(toWindow: newWindow)
         
-        if newSuperview != nil {
+        if newWindow != nil {
             presenterInterface?.viewWillAppear(animated: false)
         } else {
             presenterInterface?.viewWillDisappear(animated: false)
         }
     }
     
-    override open func didMoveToSuperview() {
-        super.didMoveToSuperview()
+    override open func didMoveToWindow() {
+        super.didMoveToWindow()
         
-        if superview != nil {
+        if window != nil {
             presenterInterface?.viewDidAppear(animated: false)
         } else {
             presenterInterface?.viewDidDisappear(animated: false)

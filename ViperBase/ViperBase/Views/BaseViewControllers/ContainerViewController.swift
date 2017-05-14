@@ -7,23 +7,29 @@
 //
 
 open class ContainerViewController: PresentableViewController {
-    @IBOutlet public var containerView: UIView?
+    fileprivate var innerContainerView: UIView?
     @IBOutlet fileprivate(set) open var viewController: UIViewController?
 
-    open var currentContainerView: UIView {
-        if !isViewLoaded {
-            if #available(iOS 9.0, *) {
-                loadViewIfNeeded()
-            } else {
-                // Load view in 'brute' way
-                let _ = view
+    @IBOutlet open var containerView: UIView! {
+        get {
+            if !isViewLoaded {
+                if #available(iOS 9.0, *) {
+                    loadViewIfNeeded()
+                } else {
+                    // Load view in 'brute' way
+                    let _ = view
+                }
             }
+            
+            return innerContainerView ?? view
         }
-        
-        return containerView ?? view
+        set(newView) {
+            innerContainerView = newView
+        }
     }
     
     // TODO: - Run animator: UIViewControllerContextTransitioning
+    // TODO: - Check XIB loading
     open func setViewController(_ viewController: UIViewController?, animator: UIViewControllerAnimatedTransitioning? = nil) {
         if self.viewController != viewController {
             if let currentViewController = self.viewController {
@@ -31,6 +37,8 @@ open class ContainerViewController: PresentableViewController {
                 currentViewController.removeFromParentViewController()
                 currentViewController.view.removeFromSuperview()
                 currentViewController.didMove(toParentViewController: nil)
+                
+                containerView = nil
             }
             
             self.viewController = viewController
@@ -38,9 +46,9 @@ open class ContainerViewController: PresentableViewController {
             if let newViewController = viewController {
                 newViewController.willMove(toParentViewController: self)
                 
-                newViewController.view.frame = currentContainerView.bounds
-                currentContainerView.addSubview(newViewController.view)
-                currentContainerView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                newViewController.view.frame = containerView.bounds
+                containerView.addSubview(newViewController.view)
+                containerView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
                 
                 addChildViewController(newViewController)
                 viewController?.didMove(toParentViewController: self)
