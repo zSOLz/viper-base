@@ -22,7 +22,9 @@ final class RegistrationAssembly: Assembly {
             return registrationRouter
         }
     }
-
+    
+    /// This code shows how to share mutable state between different assemblies and interactors.
+    /// Please do not repeat this in real project! Use IOC container framework to resolve such child-parent dependencies.
     init(userDataSession: UserDataSession) {
         self.userDataSession = userDataSession
     }

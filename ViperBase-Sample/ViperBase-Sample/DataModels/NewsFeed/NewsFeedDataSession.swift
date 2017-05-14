@@ -6,7 +6,7 @@
 //  Copyright © 2017 SOL. All rights reserved.
 //
 
-import Foundation
+import ViperBase
 
 final class NewsFeedDataSession {
     var articles = [NewsFeedArticle]()

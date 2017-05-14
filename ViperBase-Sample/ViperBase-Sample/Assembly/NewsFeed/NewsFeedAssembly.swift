@@ -26,6 +26,7 @@ final class NewsFeedAssembly: Assembly {
     }
 }
 
+// MARK: - ArticleDetailsInteractorBuilder
 extension NewsFeedAssembly: ArticleDetailsInteractorBuilder {
     func articleDetailsInteractor(withArticleId articleId: NewsFeedArticleId) -> ArticleDetailsInteractorInterface {
         return ArticleDetailsInteractor(newsFeedDataSession: self.newsFeedDataSession, articleId: articleId)

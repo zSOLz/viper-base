@@ -705,8 +705,7 @@
 				TargetAttributes = {
 					FF482E491EB9F296004DEE00 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VGV466S22A;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -934,10 +933,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VGV466S22A;
 				INFOPLIST_FILE = "ViperBase-Sample/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "SOL.ViperBase-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "ViperBase-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -948,10 +946,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VGV466S22A;
 				INFOPLIST_FILE = "ViperBase-Sample/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "SOL.ViperBase-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "ViperBase-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

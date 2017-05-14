@@ -76,7 +76,8 @@ extension RegistrationCredentialsPresenter: RegistrationCredentialsPresenterInte
         registrationInteractor.password = passwordText
         registrationInteractor.registerUser(success: { [weak self] in
             self?.router?.completeRegistration()
-        }, failure: { error in
+        }, failure: { [weak self] error in
+            self?.view?.setActivityIndicator(visible: false)
             // TODO: Show alert
         })
     }

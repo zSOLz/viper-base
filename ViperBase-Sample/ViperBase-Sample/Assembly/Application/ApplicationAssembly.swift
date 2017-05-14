@@ -26,10 +26,16 @@ final class ApplicationAssembly: Assembly {
 
 // MARK: - ApplicationAssemblyInterface
 extension ApplicationAssembly: ApplicationAssemblyInterface {
+    /// NewsFeedRouter is contain in another assembly. First you create assembly then router.
+    /// Router's object will keep strong reference to underlined assembly.
+    /// See NewsFeedAssembly.newsFeedRouter() method and NewsFeedRouter.newsFeedAssembly preperty
     func newsFeedRouter() -> NewsFeedRouter {
         return NewsFeedAssembly().newsFeedRouter()
     }
     
+    /// ProfileRouter is contain in another assembly. First you create assembly then router.
+    /// Router's object will keep strong reference to underlined assembly.
+    /// See ProfileAssembly.profileRouter() method and ProfileRouter.profileAssembly preperty
     func profileRouter() -> ProfileRouter {
         return ProfileAssembly().profileRouter()
     }

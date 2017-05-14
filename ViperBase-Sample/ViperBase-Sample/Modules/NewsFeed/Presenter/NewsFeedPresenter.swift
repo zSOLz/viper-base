@@ -47,8 +47,8 @@ extension NewsFeedPresenter: NewsFeedPresenterInterface {
         return newsFeedInteractor.numberOfArticles
     }
     
-    func articleViewModel(at index: Int) -> NewsFeedArticleViewModel {
-        let articleId = newsFeedInteractor.articleId(at: index)
+    func articleViewModel(at articleIndex: Int) -> NewsFeedArticleViewModel {
+        let articleId = newsFeedInteractor.articleId(at: articleIndex)
         let articleDetailsInteractor = detailsInteractorBuilder.articleDetailsInteractor(withArticleId: articleId)
         var articleImage: UIImage? = nil
         if let imageName = articleDetailsInteractor.imageName {
@@ -60,8 +60,8 @@ extension NewsFeedPresenter: NewsFeedPresenterInterface {
         return viewModel
     }
     
-    func articleTapped(at index: Int) {
-        let articleId = newsFeedInteractor.articleId(at: index)
+    func articleTapped(at articleIndex: Int) {
+        let articleId = newsFeedInteractor.articleId(at: articleIndex)
         router?.showArticleDetails(with: articleId)
     }
 }

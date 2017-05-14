@@ -9,6 +9,8 @@
 import ViperBase
 
 final class ProfileAssembly: Assembly {
+    /// userDataSession represents user state in application.
+    /// DataSessions layer is the place to keep app mutable application state.
     fileprivate var userDataSession = UserDataSession()
     fileprivate weak var innerProfileRouter: ProfileRouter?
     
@@ -23,6 +25,7 @@ final class ProfileAssembly: Assembly {
     }
 }
 
+// MARK: - ProfileAssemblyInterface
 extension ProfileAssembly: ProfileAssemblyInterface {
     func userWlcomeViewController() -> UserWelcomeViewController {
         let presenter = UserWelcomePresenter(router: profileRouter())

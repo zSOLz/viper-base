@@ -27,5 +27,5 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___Presenter {
 
 // MARK: - ___FILEBASENAMEASIDENTIFIER___PresenterInterface
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface {
-    
+    // Empty
 }

@@ -8,6 +8,7 @@
 
 import ViperBase
 
+/// Base class for all assemblies in the sample. In real project it's better to use IOC container framework like Swinject or Dip.
 class Assembly: NSObject {
     // Empty
 }

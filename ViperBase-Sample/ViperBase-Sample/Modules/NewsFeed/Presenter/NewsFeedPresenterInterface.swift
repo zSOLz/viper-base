@@ -16,7 +16,7 @@ struct NewsFeedArticleViewModel {
 
 protocol NewsFeedPresenterInterface: PresenterInterface {
     var numberOfArticles: Int { get }
-    func articleViewModel(at index: Int) -> NewsFeedArticleViewModel
+    func articleViewModel(at articleIndex: Int) -> NewsFeedArticleViewModel
     
-    func articleTapped(at index: Int)
+    func articleTapped(at articleIndex: Int)
 }

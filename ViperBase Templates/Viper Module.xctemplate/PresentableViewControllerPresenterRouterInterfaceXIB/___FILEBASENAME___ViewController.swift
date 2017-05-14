@@ -23,3 +23,12 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___ViewController {
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___ViewInterface {
     // Empty
 }
+
+// MARK: - ContentContainerInterface
+extension ___FILEBASENAMEASIDENTIFIER___ViewController {
+    override func setupContent() {
+        super.setupContent()
+        
+        // Add customization code or remove
+    }
+}

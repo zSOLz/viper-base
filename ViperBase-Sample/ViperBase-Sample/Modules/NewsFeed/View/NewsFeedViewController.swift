@@ -36,7 +36,8 @@ extension NewsFeedViewController: UITableViewDataSource, UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsFeedTableCell.identifier, for: indexPath) as! NewsFeedTableCell
-        cell.setup(viewModel: presenter.articleViewModel(at: indexPath.row))
+        let articleViewModel = presenter.articleViewModel(at: indexPath.row)
+        cell.setup(viewModel: articleViewModel)
         return cell
     }
     

@@ -6,7 +6,7 @@
 //  Copyright © 2017 SOL. All rights reserved.
 //
 
-import Foundation
+import ViperBase
 
 class UserRegistrationDataSession {
     var info = UserRegistrationInfo()

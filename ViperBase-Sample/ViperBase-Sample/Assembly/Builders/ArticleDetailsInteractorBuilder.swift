@@ -6,8 +6,11 @@
 //  Copyright © 2017 SOL. All rights reserved.
 //
 
-import Foundation
+import ViperBase
 
+/// Builder protocols usage prevents spreding of assembly logic in different layers.
+/// Different builder-like protocols allows you to keep all class creation logic in assembly layer.
+/// See NewsFeedPresenter.detailsInteractorBuilder to understand how it should work.
 protocol ArticleDetailsInteractorBuilder {
     func articleDetailsInteractor(withArticleId articleId: NewsFeedArticleId) -> ArticleDetailsInteractorInterface
 }
