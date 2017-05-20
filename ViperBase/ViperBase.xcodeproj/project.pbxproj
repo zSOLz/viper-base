@@ -18,6 +18,7 @@
 		FF8B4D731EC8365F0016504E /* CustomServicesMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B4D721EC8365F0016504E /* CustomServicesMocks.swift */; };
 		FF8B4D741EC83C040016504E /* ServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B4D6D1EC505A50016504E /* ServiceTest.swift */; };
 		FF8B4D751EC83C040016504E /* ServiceManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B4D6E1EC505A50016504E /* ServiceManagerTest.swift */; };
+		FF8B4D771EC8C6980016504E /* ContainerViewControllerTransitionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B4D761EC8C6980016504E /* ContainerViewControllerTransitionContext.swift */; };
 		FF919D641EB353EA0003A85C /* ViperBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF919D5A1EB353EA0003A85C /* ViperBase.framework */; };
 		FF919D6B1EB353EA0003A85C /* ViperBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FF919D5D1EB353EA0003A85C /* ViperBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF919D7C1EB356E60003A85C /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF919D7B1EB356E60003A85C /* ViewInterface.swift */; };
@@ -69,6 +70,7 @@
 		FF8B4D6D1EC505A50016504E /* ServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTest.swift; sourceTree = "<group>"; };
 		FF8B4D6E1EC505A50016504E /* ServiceManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManagerTest.swift; sourceTree = "<group>"; };
 		FF8B4D721EC8365F0016504E /* CustomServicesMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomServicesMocks.swift; sourceTree = "<group>"; };
+		FF8B4D761EC8C6980016504E /* ContainerViewControllerTransitionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewControllerTransitionContext.swift; sourceTree = "<group>"; };
 		FF919D5A1EB353EA0003A85C /* ViperBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViperBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF919D5D1EB353EA0003A85C /* ViperBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViperBase.h; sourceTree = "<group>"; };
 		FF919D5E1EB353EA0003A85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				FF919D7E1EB357E50003A85C /* ContainerViewController.swift */,
+				FF8B4D761EC8C6980016504E /* ContainerViewControllerTransitionContext.swift */,
 				FFA6DD3A1EB8F75A003D7784 /* PresentableNavigationController.swift */,
 				FF24530B1EB903590017D32D /* PresentableTabBarController.swift */,
 				FF919D801EB357E50003A85C /* PresentableViewController.swift */,
@@ -518,6 +521,7 @@
 				FF919DAD1EB3AA510003A85C /* ContainerRouter.swift in Sources */,
 				FFA6DD401EB902A5003D7784 /* TabRouterInterface.swift in Sources */,
 				FF919DB01EB3AA510003A85C /* StackRouter.swift in Sources */,
+				FF8B4D771EC8C6980016504E /* ContainerViewControllerTransitionContext.swift in Sources */,
 				FF919D921EB35D9D0003A85C /* ContentContainerInterface.swift in Sources */,
 				FF919D9E1EB399150003A85C /* InteractorInterface.swift in Sources */,
 				FFA6DD351EB8EB4B003D7784 /* ServiceManager.swift in Sources */,
