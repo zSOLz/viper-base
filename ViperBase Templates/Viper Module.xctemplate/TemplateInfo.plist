@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>Meke ciew and presenter</string>
+	<key>Summary</key>
+	<string>Viper base module</string>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>DefaultCompletionName</key>
+	<string>ViperModule</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Module:</string>
+			<key>Description</key>
+			<string>The name of viper module</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewSubclass</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>View subclass:</string>
+			<key>Description</key>
+			<string>What class will be subclass of new view</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Default</key>
+			<string>PresentableViewController</string>
+			<key>Values</key>
+			<array>
+				<string>PresentableView</string>
+				<string>PresentableViewController</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>presenterSubclass</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Presenter subclass:</string>
+			<key>Description</key>
+			<string>What class will be subclass of new presenter</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Default</key>
+			<string>Presenter</string>
+			<key>Values</key>
+			<array>
+				<string>Presenter</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>routerInterface</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Router Interface:</string>
+			<key>Description</key>
+			<string>What router will be used in this module:</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Default</key>
+			<string>RouterInterface</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>XIB</string>
+			<key>Name</key>
+			<string>Also create XIB file for user interface</string>
+			<key>Description</key>
+			<string>Whether to create a XIB file with the same name</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>viewSubclass</key>
+				<array>
+					<string>PresentableView</string>
+					<string>PresentableViewController</string>
+				</array>
+			</dict>
+			<key>Default</key>
+			<string>true</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>
