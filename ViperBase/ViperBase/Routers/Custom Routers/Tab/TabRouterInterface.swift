@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ Custom tab router interface. Use it as base interface when you will be creating tab-based router logic.
+ */
 public protocol TabRouterInterface: RouterInterface {
     // Empty
 }

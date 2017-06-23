@@ -103,6 +103,13 @@ open class Router: NSObject, RouterInterface {
         baseViewController.dismiss(animated: animated, completion: completion)
     }
     
+    /// Returns first router in child list with required type or nil if not found
+    /// - parameter type: router's type to be found
+    open func childRouter<RouterType: Router>(withType type: RouterType.Type) -> RouterType? {
+        let router = (childRouters.first { $0 is RouterType } as? RouterType)
+        return router
+    }
+    
     /// Should current router automatically dismiss modally presented view controller or router on *closeCurrentView* method call. Override to change closing behavior. Default value is *true*.
     open var shouldAutomaticallyDismissModalController: Bool {
         return true
