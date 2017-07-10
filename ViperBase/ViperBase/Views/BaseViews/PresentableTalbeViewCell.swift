@@ -1,34 +1,28 @@
 //
-//  PresentableView.swift
+//  PresentableTalbeViewCell.swift
 //  ViperBase
 //
-//  Created by SOL on 28.04.17.
+//  Created by SOL on 6/27/17.
 //  Copyright © 2017 SOL. All rights reserved.
 //
 
 import UIKit
 
-open class PresentableView: UIView, ViewInterface, ContentContainerInterface {
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        setupContent()
-    }
-    
-    public init() {
-        super.init(frame: CGRect.zero)
-        
-        setupContent()
-    }
-    
-    override open func awakeFromNib() {
-        super.awakeFromNib()
+open class PresentableTalbeViewCell: UITableViewCell, ViewInterface, ContentContainerInterface {
+    override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         setupContent()
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    open override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        setupContent()
     }
     
     open var presenterInterface: PresenterInterface? {
@@ -46,7 +40,7 @@ open class PresentableView: UIView, ViewInterface, ContentContainerInterface {
     
     override open func willMove(toWindow newWindow: UIWindow?) {
         super.willMove(toWindow: newWindow)
-
+        
         if newWindow != nil {
             presenterInterface?.viewWillAppear(animated: false)
         } else {

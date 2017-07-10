@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A020B3C71F13D449007BA3BB /* PresentableTalbeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A020B3C61F13D449007BA3BB /* PresentableTalbeViewCell.swift */; };
 		FF24530C1EB903590017D32D /* PresentableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24530B1EB903590017D32D /* PresentableTabBarController.swift */; };
 		FF643B931EB3AD9800B067D4 /* StackRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643B921EB3AD9800B067D4 /* StackRouterInterface.swift */; };
 		FF643B951EB3AF1B00B067D4 /* ContainerRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643B941EB3AF1B00B067D4 /* ContainerRouterInterface.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A020B3C61F13D449007BA3BB /* PresentableTalbeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableTalbeViewCell.swift; sourceTree = "<group>"; };
 		FF24530B1EB903590017D32D /* PresentableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableTabBarController.swift; sourceTree = "<group>"; };
 		FF643B921EB3AD9800B067D4 /* StackRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackRouterInterface.swift; sourceTree = "<group>"; };
 		FF643B941EB3AF1B00B067D4 /* ContainerRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerRouterInterface.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 		FF919D991EB38B450003A85C /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
+				A020B3C61F13D449007BA3BB /* PresentableTalbeViewCell.swift */,
 				FF919D941EB385510003A85C /* PresentableControl.swift */,
 				FF919D841EB357E50003A85C /* PresentableView.swift */,
 			);
@@ -512,6 +515,7 @@
 				FF919D7C1EB356E60003A85C /* ViewInterface.swift in Sources */,
 				FF919D901EB35A930003A85C /* PresenterInterface.swift in Sources */,
 				FFA6DD371EB8EC34003D7784 /* Service.swift in Sources */,
+				A020B3C71F13D449007BA3BB /* PresentableTalbeViewCell.swift in Sources */,
 				FF919DA41EB39BB10003A85C /* Router.swift in Sources */,
 				FF919DA01EB3995C0003A85C /* Presenter.swift in Sources */,
 				FF919D861EB357E50003A85C /* ContainerViewController.swift in Sources */,

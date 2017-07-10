@@ -9,7 +9,7 @@
 import UIKit
 
 open class Service: NSObject {
-    class func registered(inManager manager: ServiceManager? = nil) -> Self {
+    class open func registered(inManager manager: ServiceManager? = nil) -> Self {
         let currentManager = manager ?? ServiceManager.general
         guard let service = currentManager.registered(serviceWithType: self) else {
             fatalError("ViperBase.Service.registered(inManager:)\n" +
@@ -22,7 +22,7 @@ open class Service: NSObject {
     * Test for this method always fails: Unknown swift compiler bug. Use it on your own risk.
     * See commented test in ServiceTest.testIsRegisteredInManagerMethod(). Maybe you can solve this bug :)
     */
-    class func isRegistered(inManager manager: ServiceManager? = nil) -> Bool {
+    class open func isRegistered(inManager manager: ServiceManager? = nil) -> Bool {
         let currentManager = manager ?? ServiceManager.general
         let service = currentManager.registered(serviceWithType: self)
         return (service != nil)
