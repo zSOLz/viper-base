@@ -96,10 +96,14 @@ class ContainerRouterTests: XCTestCase {
         XCTAssertNil(containerRouter.activeViewController)
         
         containerRouter.addChild(router: childRouter1)
-        containerRouter.addChild(router: childRouter2)
-        containerRouter.contentRouter = childRouter3
+        containerRouter.contentRouter = childRouter2
         
-        XCTAssertEqual(containerRouter.childRouters, [childRouter3])
+        XCTAssertTrue(containerRouter.childRouters.contains(childRouter2))
+        XCTAssertEqual(containerRouter.activeViewController, childViewController2)
+        
+        containerRouter.contentRouter = childRouter3
+        XCTAssertFalse(containerRouter.childRouters.contains(childRouter2))
+        XCTAssertTrue(containerRouter.childRouters.contains(childRouter3))
         XCTAssertEqual(containerRouter.activeViewController, childViewController3)
     }
 }
