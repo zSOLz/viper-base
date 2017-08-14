@@ -247,8 +247,7 @@
 		FF919D9C1EB393240003A85C /* BaseViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FF919D7E1EB357E50003A85C /* ContainerViewController.swift */,
-				FF8B4D761EC8C6980016504E /* ContainerViewControllerTransitionContext.swift */,
+				FFFF09241ED0DF0B0072E41D /* ContainerViewController */,
 				FFA6DD3A1EB8F75A003D7784 /* PresentableNavigationController.swift */,
 				FF24530B1EB903590017D32D /* PresentableTabBarController.swift */,
 				FF919D801EB357E50003A85C /* PresentableViewController.swift */,
@@ -392,6 +391,15 @@
 				FFA6DD3F1EB902A5003D7784 /* TabRouterInterface.swift */,
 			);
 			path = Tab;
+			sourceTree = "<group>";
+		};
+		FFFF09241ED0DF0B0072E41D /* ContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF919D7E1EB357E50003A85C /* ContainerViewController.swift */,
+				FF8B4D761EC8C6980016504E /* ContainerViewControllerTransitionContext.swift */,
+			);
+			name = ContainerViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

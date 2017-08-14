@@ -51,7 +51,7 @@ open class ContainerViewControllerTransitionContext: NSObject, UIViewControllerC
     }
     
     open func completeTransition(_ didComplete: Bool) {
-        toViewController?.view.frame = containerView.bounds
+        // Does nothing.
     }
     
     public func viewController(forKey key: UITransitionContextViewControllerKey) -> UIViewController? {

@@ -85,6 +85,7 @@
 		FFF6F6071EC0BCB9006E2FC9 /* UserRegistrationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F6051EC0BCB9006E2FC9 /* UserRegistrationDataManager.swift */; };
 		FFF6F6081EC0BCB9006E2FC9 /* UserRegistrationDataManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F6061EC0BCB9006E2FC9 /* UserRegistrationDataManagerInterface.swift */; };
 		FFF6F60A1EC0BDB5006E2FC9 /* UserRegistrationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6F6091EC0BDB5006E2FC9 /* UserRegistrationInfo.swift */; };
+		FFFF09261ED0DF600072E41D /* HorisontalShiftTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF09251ED0DF600072E41D /* HorisontalShiftTransitionAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -181,6 +182,7 @@
 		FFF6F6051EC0BCB9006E2FC9 /* UserRegistrationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationDataManager.swift; sourceTree = "<group>"; };
 		FFF6F6061EC0BCB9006E2FC9 /* UserRegistrationDataManagerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationDataManagerInterface.swift; sourceTree = "<group>"; };
 		FFF6F6091EC0BDB5006E2FC9 /* UserRegistrationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationInfo.swift; sourceTree = "<group>"; };
+		FFFF09251ED0DF600072E41D /* HorisontalShiftTransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorisontalShiftTransitionAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				FF3398991EC26842002A7711 /* KeyboardHeightObserver.swift */,
+				FFFF09251ED0DF600072E41D /* HorisontalShiftTransitionAnimation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -779,6 +782,7 @@
 				FF6C22221EC1EC13007A3820 /* UserProfilePresenterInterface.swift in Sources */,
 				FF482EC81EBA8A7D004DEE00 /* ApplicationAssemblyInterface.swift in Sources */,
 				FF6C22151EC1D489007A3820 /* RegistrationCredentialsViewController.swift in Sources */,
+				FFFF09261ED0DF600072E41D /* HorisontalShiftTransitionAnimation.swift in Sources */,
 				FF482EA11EBA044A004DEE00 /* NewsFeedViewController.swift in Sources */,
 				FFF6F5F71EC075D0006E2FC9 /* UserProfile.swift in Sources */,
 				FFF6F5EE1EC07444006E2FC9 /* ProfileAssemblyInterface.swift in Sources */,

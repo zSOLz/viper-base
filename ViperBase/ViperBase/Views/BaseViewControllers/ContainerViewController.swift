@@ -9,7 +9,7 @@
 open class ContainerViewController: PresentableViewController {
     fileprivate var innerContainerView: UIView?
     @IBOutlet fileprivate(set) open var viewController: UIViewController?
-
+    
     @IBOutlet open var containerView: UIView! {
         get {
             if !isViewLoaded {
@@ -36,14 +36,12 @@ open class ContainerViewController: PresentableViewController {
                                                         to: toViewController)
     }
     
-    // TODO: - Run animator: UIViewControllerContextTransitioning
-    // TODO: - Check XIB loading
     open func setViewController(_ toViewController: UIViewController?, animator: UIViewControllerAnimatedTransitioning? = nil) {
         if viewController != toViewController {
             if let animator = animator {
                 let fromViewController = viewController
                 viewController = toViewController
-
+                
                 let context = transitionContext(containerView: containerView,
                                                 from: fromViewController,
                                                 to: toViewController)
@@ -54,23 +52,20 @@ open class ContainerViewController: PresentableViewController {
                     containerView.addSubview(toViewController.view)
                 }
                 
-                UIView.animate(withDuration: animator.transitionDuration(using: context), animations: {
-                    animator.animateTransition(using: context)
-                }, completion: { [weak self] completed in
+                animator.animateTransition(using: context)
+                DispatchQueue.main.asyncAfter(deadline: .now() + animator.transitionDuration(using: context), execute: { [weak self] in
                     if let fromViewController = fromViewController {
                         fromViewController.removeFromParentViewController()
                         fromViewController.view.removeFromSuperview()
                         fromViewController.didMove(toParentViewController: nil)
                     }
                     
-                    animator.animationEnded?(completed)
-                    context.completeTransition(completed)
-                    
                     if let toViewController = toViewController {
                         self?.addChildViewController(toViewController)
                         toViewController.didMove(toParentViewController: self)
                     }
                     
+                    animator.animationEnded?(true)
                 })
             } else {
                 let fromViewController = viewController
@@ -86,7 +81,7 @@ open class ContainerViewController: PresentableViewController {
                 if let toViewController = toViewController {
                     toViewController.willMove(toParentViewController: self)
                     addChildViewController(toViewController)
-
+                    
                     containerView.addSubview(toViewController.view)
                     toViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
                     toViewController.view.frame = containerView.bounds
