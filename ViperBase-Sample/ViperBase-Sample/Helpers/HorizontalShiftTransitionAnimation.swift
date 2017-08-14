@@ -1,5 +1,5 @@
 //
-//  HorisontalShiftTransitionAnimation.swift
+//  HorizontalShiftTransitionAnimation.swift
 //  ViperBase-Sample
 //
 //  Created by SOL on 20.05.17.
@@ -8,7 +8,7 @@
 
 import ViperBase
 
-class HorisontalShiftTransitionAnimation: NSObject {
+class HorizontalShiftTransitionAnimation: NSObject {
     enum Direction {
         case left
         case right
@@ -23,7 +23,7 @@ class HorisontalShiftTransitionAnimation: NSObject {
     }
 }
 
-extension HorisontalShiftTransitionAnimation: UIViewControllerAnimatedTransitioning {
+extension HorizontalShiftTransitionAnimation: UIViewControllerAnimatedTransitioning {
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration
     }
