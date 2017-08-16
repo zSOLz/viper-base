@@ -8,6 +8,11 @@
 
 import UIKit
 
+/**
+ The base interface covers copmlex UI logic of VIPER module.
+ Use this interface to control UI from presenter's layer.
+ Only methods provided by a custom view interface can be called from presenter classes.
+ */
 public protocol ViewInterface: NSObjectProtocol {
     // Empty
 }

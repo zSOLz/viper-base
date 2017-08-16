@@ -46,10 +46,10 @@ class ContainerRouterTests: XCTestCase {
         let oneViewController = OneViewController()
         let anotherViewController = AnotherViewController()
         
-        containerRouter.containerViewController.setViewController(oneViewController)
+        containerRouter.containerViewController.setContentViewController(oneViewController)
         XCTAssertEqual(containerRouter.activeViewController, oneViewController)
         
-        containerRouter.containerViewController.setViewController(anotherViewController, animator: nil)
+        containerRouter.containerViewController.setContentViewController(anotherViewController, animator: nil)
         XCTAssertEqual(containerRouter.activeViewController, anotherViewController)
     }
 

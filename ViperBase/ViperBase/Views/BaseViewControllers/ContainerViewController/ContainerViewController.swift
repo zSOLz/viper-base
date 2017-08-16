@@ -6,10 +6,17 @@
 //  Copyright © 2017 SOL. All rights reserved.
 //
 
+/**
+ Container class can display content represented by single view controller.
+ It supports dynamic and animated switching between different content controllers
+ */
 open class ContainerViewController: PresentableViewController {
     fileprivate var innerContainerView: UIView?
-    @IBOutlet fileprivate(set) open var viewController: UIViewController?
     
+    /// The view controller that is contained in this container controller
+    @IBOutlet fileprivate(set) open var contentViewController: UIViewController?
+    
+    /// The view that will be a superview for content view controller's view
     @IBOutlet open var containerView: UIView! {
         get {
             if !isViewLoaded {
@@ -28,6 +35,11 @@ open class ContainerViewController: PresentableViewController {
         }
     }
     
+    /// Method creates and returns default transition context to implement animation between old and new content view controller.
+    /// Override it to use your custom transition context. It wouldn't be deallocated until animation has ended.
+    /// - parameter containerView: will be a container view for future animation
+    /// - parameter fromViewController: view controller that will be hidden
+    /// - parameter toViewController: view controller that should be shown
     open func transitionContext(containerView: UIView,
                                 from fromViewController: UIViewController? = nil,
                                 to toViewController: UIViewController? = nil) -> ContainerViewControllerTransitionContext {
@@ -36,11 +48,15 @@ open class ContainerViewController: PresentableViewController {
                                                         to: toViewController)
     }
     
-    open func setViewController(_ toViewController: UIViewController?, animator: UIViewControllerAnimatedTransitioning? = nil) {
-        if viewController != toViewController {
+    /// Set new child content view controller and add it's view as a subview to container view. The action can be animated.
+    /// - parameter toViewController: view controller that will be set as content
+    /// - parameter animator: represents animation logic that will be executed during transition between currently presented view controller and the new one.
+    /// If this parameter is nil the change between controller will be immediate.
+    open func setContentViewController(_ toViewController: UIViewController?, animator: UIViewControllerAnimatedTransitioning? = nil) {
+        if contentViewController != toViewController {
             if let animator = animator {
-                let fromViewController = viewController
-                viewController = toViewController
+                let fromViewController = contentViewController
+                contentViewController = toViewController
                 
                 let context = transitionContext(containerView: containerView,
                                                 from: fromViewController,
@@ -68,8 +84,8 @@ open class ContainerViewController: PresentableViewController {
                     animator.animationEnded?(true)
                 })
             } else {
-                let fromViewController = viewController
-                viewController = toViewController
+                let fromViewController = contentViewController
+                contentViewController = toViewController
                 
                 if let fromViewController = fromViewController {
                     fromViewController.willMove(toParentViewController: nil)

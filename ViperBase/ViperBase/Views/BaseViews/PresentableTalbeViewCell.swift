@@ -8,6 +8,12 @@
 
 import UIKit
 
+/**
+ The base class for your custom cells subclasses in VIPER architecture.
+ Use it to implement UI classes with own presenter based on UITableViewCell.
+ Also the class interprete UIView's appearance methods to UIViewController lifecycle similar interface.
+ Best practice is to set presenter each time the cell becomes reused.
+ */
 open class PresentableTalbeViewCell: UITableViewCell, ViewInterface, ContentContainerInterface {
     override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

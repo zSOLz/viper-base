@@ -42,7 +42,7 @@ open class ContainerRouter: Router, ContainerRouterInterface {
     /// **Set:** removes current content router, adds new contentRouter as child and set its base view controller as content.
     open var contentRouter: Router? {
         get {
-            return childRouters.first { containerViewController.viewController == $0.baseViewController }
+            return childRouters.first { containerViewController.contentViewController == $0.baseViewController }
         }
         set(newRouter) {
             if let router = contentRouter {
@@ -51,7 +51,7 @@ open class ContainerRouter: Router, ContainerRouterInterface {
             if let router = newRouter {
                 addChild(router: router)
             }
-            containerViewController.setViewController(newRouter?.baseViewController)
+            containerViewController.setContentViewController(newRouter?.baseViewController)
         }
     }
     
@@ -72,6 +72,6 @@ open class ContainerRouter: Router, ContainerRouterInterface {
     /// Overrided property of 'Router' class.
     /// Returns the current active view controller in container view controller
     override open var activeViewController: UIViewController? {
-        return containerViewController.viewController
+        return containerViewController.contentViewController
     }
 }
