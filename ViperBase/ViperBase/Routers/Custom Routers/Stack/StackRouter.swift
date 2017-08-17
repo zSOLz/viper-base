@@ -51,8 +51,9 @@ open class StackRouter: Router, StackRouterInterface, UINavigationControllerDele
         return navigationController.topViewController
     }
     
-    /// Overridden method of 'Router' class. /// Pop top view controller if this action is available (number of pushed controllers more than one).
-    /// Otherwise called its base implementation.
+    /// Overridden method of 'Router' class.
+    /// Pop top view controller if this action is available (number of pushed controllers more than one).
+    /// Otherwise calls its base implementation.
     override open func closeCurrentView(animated: Bool, completion: (()->Void)?) {
         if hasPresentedViewController || navigationController.viewControllers.count <= 1 {
             super.closeCurrentView(animated: animated, completion: completion)

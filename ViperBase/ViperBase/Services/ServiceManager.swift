@@ -23,14 +23,14 @@ open class ServiceManager: NSObject {
     /// Array of all registered services in the current service manager
     open fileprivate(set) var registeredServices = [Service]()
     
-    /// Simple init is not allowed. Use init(parent:)
+    /// Simple init is not allowed. Use **init(parent:)**.
     fileprivate override init() {
         // Does nothing
     }
     
     /// Init new service manager with it's parent.
     /// Be carefully: looping is not allowed and does not handling yet.
-    /// - 
+    /// - parameter parent: the manager that will be a parent of the new one
     public init(parent: ServiceManager) {
         super.init()
         
