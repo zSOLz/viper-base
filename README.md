@@ -1,2 +1,3 @@
 # ViperBase-Test
-Another VIPER architecture template - Test repo
+Another VIPER architecture template for Swift.
+See project samples to understand how to integrate framework in best way.
