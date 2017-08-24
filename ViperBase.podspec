@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/zSOLz/viper-base'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Andrew Solovey' => 'sol.bsuir@gmail.com' }
-  s.source           = { :git => 'https://github.com/zSOLz/viper-base', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zSOLz/viper-base.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
   s.source_files = 'ViperBase/ViperBase/**/*'
