@@ -1,6 +1,6 @@
 # ViperBase
 
-[![CI Status](http://img.shields.io/travis/Andrew Solovey/ViperBase.svg?style=flat)](https://travis-ci.org/zSOLz/viper-base)
+[![CI Status](https://travis-ci.org/zSOLz/viper-base.svg?branch=master)](https://travis-ci.org/zSOLz/viper-base)
 [![Version](https://img.shields.io/cocoapods/v/ViperBase.svg?style=flat)](http://cocoapods.org/pods/ViperBase)
 [![License](https://img.shields.io/cocoapods/l/ViperBase.svg?style=flat)](http://cocoapods.org/pods/ViperBase)
 [![Platform](https://img.shields.io/cocoapods/p/ViperBase.svg?style=flat)](http://cocoapods.org/pods/ViperBase)
