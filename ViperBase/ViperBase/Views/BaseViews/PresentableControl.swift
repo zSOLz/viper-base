@@ -8,6 +8,11 @@
 
 import UIKit
 
+/**
+ The base class for your custom controls subclasses in VIPER architecture.
+ Use it to implement UI classes with own presenter based on UIControl.
+ Also the class interprete UIView's appearance methods to UIViewController lifecycle similar interface.
+ */
 open class PresentableControl: UIControl, ViewInterface, ContentContainerInterface {
     override public init(frame: CGRect) {
         super.init(frame: frame)

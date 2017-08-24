@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ Custom stack router interface. Use it as base interface when you will be creating navigation-based router logic.
+ */
 public protocol StackRouterInterface: RouterInterface {
     // Empty
 }
