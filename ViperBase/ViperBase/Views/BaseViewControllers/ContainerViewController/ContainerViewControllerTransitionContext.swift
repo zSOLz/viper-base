@@ -6,6 +6,9 @@
 //  Copyright © 2017 SOL. All rights reserved.
 //
 
+/**
+ Transition context that represents basic non-interactive logic
+ */
 open class ContainerViewControllerTransitionContext: NSObject, UIViewControllerContextTransitioning {
     open var fromViewController: UIViewController?
     open var toViewController: UIViewController?

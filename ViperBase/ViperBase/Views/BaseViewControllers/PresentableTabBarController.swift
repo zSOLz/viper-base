@@ -8,7 +8,13 @@
 
 import UIKit
 
+/**
+ The base class for your custom tab bar conttroller subclases in VIPER arhitecture.
+ This class transfers UIViewController lifecycle methods calls to presenter class and keeps strong reference to it's UX (Presenter) class.
+ */
 open class PresentableTabBarController: UITabBarController, ViewInterface {
+    /// The strong link to class represents UX logic of your module.
+    /// You can use dynamic 'as' cast to convert `PresenterInterface` to specific interface
     open var presenterInterface: PresenterInterface? {
         didSet {
             if let presenter = presenterInterface {

@@ -1,33 +1,22 @@
 //
-//  PresentableView.swift
+//  PresentableTalbeViewCell.swift
 //  ViperBase
 //
-//  Created by SOL on 28.04.17.
+//  Created by SOL on 6/27/17.
 //  Copyright © 2017 SOL. All rights reserved.
 //
 
 import UIKit
 
 /**
- The base class for your custom views subclasses in VIPER architecture.
- Use it to implement UI classes with own presenter based on UIView.
+ The base class for your custom cells subclasses in VIPER architecture.
+ Use it to implement UI classes with own presenter based on UITableViewCell.
  Also the class interprete UIView's appearance methods to UIViewController lifecycle similar interface.
+ Best practice is to set presenter each time the cell becomes reused.
  */
-open class PresentableView: UIView, ViewInterface, ContentContainerInterface {
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        setupContent()
-    }
-    
-    public init() {
-        super.init(frame: CGRect.zero)
-        
-        setupContent()
-    }
-    
-    override open func awakeFromNib() {
-        super.awakeFromNib()
+open class PresentableTalbeViewCell: UITableViewCell, ViewInterface, ContentContainerInterface {
+    override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         setupContent()
     }
@@ -36,8 +25,12 @@ open class PresentableView: UIView, ViewInterface, ContentContainerInterface {
         super.init(coder: aDecoder)
     }
     
-    /// The strong link to class represents UX logic of your module.
-    /// You can use dynamic 'as' cast to convert `PresenterInterface` to specific interface
+    open override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        setupContent()
+    }
+    
     open var presenterInterface: PresenterInterface? {
         didSet {
             if let presenter = presenterInterface {
@@ -53,7 +46,7 @@ open class PresentableView: UIView, ViewInterface, ContentContainerInterface {
     
     override open func willMove(toWindow newWindow: UIWindow?) {
         super.willMove(toWindow: newWindow)
-
+        
         if newWindow != nil {
             presenterInterface?.viewWillAppear(animated: false)
         } else {
