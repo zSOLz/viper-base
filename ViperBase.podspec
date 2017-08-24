@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/zSOLz/viper-base.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-  s.source_files = 'ViperBase/ViperBase/**/*'
+  s.source_files = 'ViperBase/ViperBase/**/**/**/**/**'
   s.requires_arc = true
   s.frameworks = 'UIKit'
 end
