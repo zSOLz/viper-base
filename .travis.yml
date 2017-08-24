@@ -1,0 +1,12 @@
+osx_image: xcode8.3
+language: objective-c
+
+script:
+#    - pod lib lint
+
+    - xcodebuild -version
+    - xcodebuild -showsdks
+
+    - set -o pipefail && xcodebuild test -workspace ViperBase.xcworkspace -scheme ViperBase -destination "OS=10.3.1,name=iPhone 7 Plus" ONLY_ACTIVE_ARCH=NO | xcpretty
+    - set -o pipefail && xcodebuild test -workspace ViperBase.xcworkspace -scheme ViperBase -destination "OS=9.3,name=iPhone 6" ONLY_ACTIVE_ARCH=NO | xcpretty
+    - set -o pipefail && xcodebuild test -workspace ViperBase.xcworkspace -scheme ViperBase -destination "OS=8.4,name=iPhone 5" ONLY_ACTIVE_ARCH=NO | xcpretty
