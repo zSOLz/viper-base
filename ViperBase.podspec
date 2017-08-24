@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ViperBase'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Base VIPER classes, samples and templates on Swift'
   s.description      = <<-DESC
                        ViperBase will show you how to use VIPER architecture in practice and will simplify your work using good code samples and useful XCode templates
