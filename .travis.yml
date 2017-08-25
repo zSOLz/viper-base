@@ -4,10 +4,11 @@ language: objective-c
 script:
     - pod lib lint
 
+    - set -o pipefail
     - xcodebuild -version
     - xcodebuild -showsdks
+    - xcodebuild -list -workspace ViperBase.xcworkspace
 
-    - set -o pipefail
     - xcodebuild test -workspace ViperBase.xcworkspace -scheme "ViperBase" -sdk iphonesimulator -destination "OS=10.3.1,name=iPhone 7 Plus" ONLY_ACTIVE_ARCH=NO | xcpretty
-    - xcodebuild test -workspace ViperBase.xcworkspace -scheme "ViperBase" -sdk iphonesimulator -destination "OS=9.3,name=iPhone 6" ONLY_ACTIVE_ARCH=NO | xcpretty
-    - xcodebuild test -workspace ViperBase.xcworkspace -scheme "ViperBase" -sdk iphonesimulator -destination "OS=8.4,name=iPhone 5" ONLY_ACTIVE_ARCH=NO | xcpretty
+    - xcodebuild test -workspace ViperBase.xcworkspace -scheme "ViperBase" -sdk iphonesimulator -destination "OS=9.3,name=iPhone 6" ONLY_ACTIVE_ARCH=NO
+    - xcodebuild test -workspace ViperBase.xcworkspace -scheme "ViperBase" -configuration Debug -sdk iphonesimulator -destination "OS=8.4,name=iPhone 5" ONLY_ACTIVE_ARCH=NO | xcpretty
