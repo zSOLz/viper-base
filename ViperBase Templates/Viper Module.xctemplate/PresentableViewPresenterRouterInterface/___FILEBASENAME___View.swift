@@ -3,29 +3,29 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
+//  ___COPYRIGHT___
 //
 
 import ViperBase
 
-final class ___FILEBASENAMEASIDENTIFIER___View: ___VARIABLE_viewSubclass___ {
+final class ___VARIABLE_productName___View: ___VARIABLE_viewSubclass___ {
     // Empty
 }
 
 // MARK: - Fileprivate
-fileprivate extension ___FILEBASENAMEASIDENTIFIER___View {
-    final var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface? {
-        return presenterInterface as? ___FILEBASENAMEASIDENTIFIER___PresenterInterface
+fileprivate extension ___VARIABLE_productName___View {
+    final var presenter: ___VARIABLE_productName___PresenterInterface? {
+        return presenterInterface as? ___VARIABLE_productName___PresenterInterface
     }
 }
 
-// MARK: - ___FILEBASENAMEASIDENTIFIER___ViewInterface
-extension ___FILEBASENAMEASIDENTIFIER___View: ___FILEBASENAMEASIDENTIFIER___ViewInterface {
+// MARK: - ___VARIABLE_productName___ViewInterface
+extension ___VARIABLE_productName___View: ___VARIABLE_productName___ViewInterface {
     // Empty
 }
 
 // MARK: - ContentContainerInterface
-extension ___FILEBASENAMEASIDENTIFIER___View {
+extension ___VARIABLE_productName___View {
     override func setupContent() {
         super.setupContent()
         

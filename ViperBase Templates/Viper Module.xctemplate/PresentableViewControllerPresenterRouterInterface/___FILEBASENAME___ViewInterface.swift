@@ -3,11 +3,11 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
+//  ___COPYRIGHT___
 //
 
 import ViperBase
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewInterface: ViewInterface {
+protocol ___VARIABLE_productName___ViewInterface: ViewInterface {
     // Empty
 }
