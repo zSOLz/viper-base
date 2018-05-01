@@ -66,7 +66,7 @@ open class PresentableTalbeViewCell: UITableViewCell, ViewInterface, ContentCont
     
     // MARK: - ContentContainerInterface
     
-    dynamic open func setupContent() {
+    @objc dynamic open func setupContent() {
         // Does nothing
     }
 }

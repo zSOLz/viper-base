@@ -26,17 +26,17 @@ final class RegistrationInteractor: Interactor {
 extension RegistrationInteractor: RegistrationInteractorInterface {
     func isValidUsername(_ username: String) -> Bool {
         // Apply simple validation rules
-        return (username.characters.count >= 3 && username.characters.count <= 20)
+        return (username.count >= 3 && username.count <= 20)
     }
     
     func isValidPassword(_ password: String) -> Bool {
         // Apply simple validation rules
-        return password.characters.count >= 8
+        return password.count >= 8
     }
     
     func isValidEmail(_ email: String) -> Bool {
         // Apply simple validation rules
-        return (email.characters.count >= 3 &&
+        return (email.count >= 3 &&
                 email.contains("@") &&
                 email.contains("."))
     }

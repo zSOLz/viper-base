@@ -68,7 +68,7 @@ open class PresentableTabBarController: UITabBarController, ViewInterface {
     
     // MARK: - ContentContainerInterface
     
-    dynamic open func setupContent() {
+    @objc dynamic open func setupContent() {
         // Does nothing
     }
 }

@@ -68,7 +68,7 @@ open class PresentableViewController: UIViewController, ViewInterface, ContentCo
 
     // MARK: - ContentContainerInterface
 
-    dynamic open func setupContent() {
+    @objc dynamic open func setupContent() {
         // Does nothing
     }
 }
